@@ -6,3 +6,7 @@ messages:
     database-not-supported: '该类型数据库 "%s" 还没有被支持'
     database-client-not-found: '数据库客户端 "%s" 没有找到'
     connection: '连接："%s"'
+examples:
+    -
+        description: 'Connects to an specified database, or the default if not arguments passed'
+        execution: "drupal database:connect \\\n  <database>\n"

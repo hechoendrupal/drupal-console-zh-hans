@@ -1,11 +1,23 @@
-description: '导入选择的配置'
-arguments:
-    name: '配置名称'
-    file: '导入文件的路径'
-    input-file: '导入文件的路径'
+description: 导入选择的配置
+options:
+    file: 'The file(s) name or file(s) absolute path to import'
+    directory: 'The path from where to import file(s).'
 questions:
-    name: '输入配置名称'
-    file: '输入导入文件路径'
+    file: 输入导入文件路径
+    directory: 'Enter path from where to import files.'
+    name: 输入配置名称
 messages:
+    missing-file: 'File option is missing.'
     empty-value: 值不能为空
     success: '配置 "%s" 被成功导入'
+examples:
+    -
+        description: 'Providing a file option using full path.'
+        execution: "drupal config:import:single \\\n  --file=\"/path/to/file/block.block.default_block.yml\""
+    -
+        description: 'Providing file and directory options'
+        execution: "drupal config:import:single  \\\n  --file=\"block.block.default_block.yml\" \\\n  --directory=\"/path/to/directory\"\n"
+arguments:
+    name: 配置名称
+    file: 导入文件的路径
+    input-file: 导入文件的路径

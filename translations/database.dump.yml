@@ -3,5 +3,13 @@ arguments:
     database: 'settings.php 文件中 Database 的键'
 options:
     file: 数据库备份文件名称
+    gz: 'Pass this option if you want the sql result file gzipped'
 messages:
     success: 数据库已导出到：
+examples:
+    -
+        description: 'Dump default database or the one specified on the argument'
+        execution: "drupal database:dump \\\n  <database>"
+    -
+        description: 'Dump in gz compressed format'
+        execution: "drupal database:dump \\\n  --gz"

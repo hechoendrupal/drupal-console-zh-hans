@@ -1,0 +1,15 @@
+description: 显示当前配置
+arguments:
+    name: 配置名称
+errors:
+    not-exists: '配置 "%s" 不存在'
+examples:
+    -
+        description: 'List all configuration object names.'
+        execution: 'drupal config:debug'
+    -
+        description: 'Display system site configurations values.'
+        execution: 'drupal config:debug system.site'
+    -
+        description: 'List all system configuration names.'
+        execution: 'drupal config:debug | grep system'

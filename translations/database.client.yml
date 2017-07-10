@@ -3,3 +3,7 @@ arguments:
     database: 'settings.php 文件中 Database 的键'
 messages:
     connection: '连接："%s"'
+examples:
+    -
+        description: 'Launch the default client or could launch another regarding the specification on the argument'
+        execution: "drupal database:client <database>\n"

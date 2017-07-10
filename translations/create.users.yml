@@ -5,12 +5,12 @@ arguments:
     roles: 用于生成用户的角色(s)
 options:
     limit: 生成多少个用户
-    password: '用户密码'
+    password: 用户密码
     time-range: 用户的创建时间范围
 questions:
     roles: 选择用于创建用户的角色(s)
-    limit: '输入生成用户的数量'
-    password: '输入用户密码'
+    limit: 输入生成用户的数量
+    password: 输入用户密码
     time-range: 用户的创建时间范围
     time-ranges:
         - 现在
@@ -25,3 +25,10 @@ messages:
     username: 用户名
     created: 创建时间
     created-users: '生成 "%s" 用户成功'
+examples:
+    -
+        description: 'Provide the user role.'
+        execution: 'drupal create:users role'
+    -
+        description: 'Provide the number of users to create, password and time range to create.'
+        execution: "drupal create:users role \\\n  --limit=\"5\" \\\n  --password=\"usersnewpassword\" \\\n  --time-range=\"1\"\n"

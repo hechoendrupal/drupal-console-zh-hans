@@ -1,7 +1,19 @@
-description: '导出配置'
-arguments:
-    directory: '导出配置存放目录'
-    tar: '如果启用，配置文件会导出到一个存档文件.'
+description: 导出配置
+options:
+    directory: 'Define the export directory to save the configuration output.'
+    tar: 'If set, the configuration will be exported to an archive file.'
+    remove-uuid: 'If set, the configuration will be exported without uuid key.'
+    remove-config-hash: 'If set, the configuration will be exported without the default site hash key.'
 messages:
-    directory: '导出配置存放目录：'
+    directory: 导出配置存放目录：
     error: '在 "%s" 创建文件夹时出错'
+examples:
+    -
+        description: 'Optional you can add the path to export'
+        execution: "drupal config:export  \\\n  --directory=\"path/to/export\""
+    -
+        description: 'If export will be in a compressed file and/or if uuid and config hashes will be removed.'
+        execution: "drupal config:export  \\\n  --directory=\"path/to/export\" \\\n  --tar \\\n  --remove-uuid \\\n  --remove-config-hash\n"
+arguments:
+    directory: 导出配置存放目录
+    tar: 如果启用，配置文件会导出到一个存档文件.

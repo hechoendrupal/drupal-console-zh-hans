@@ -1,0 +1,19 @@
+description: 显示当前服务
+arguments:
+    service: 服务名称
+    method: 'Method name.'
+    arguments: 'Array of Arguments in CSV or JSON format.'
+messages:
+    service_id: 服务ID
+    class_name: 类名
+    service: 服务
+    class: 类
+    interface: 接口
+    parent: 父类
+    variables: 变量
+    methods: 方法
+    arguments: Arguments
+    method: Method
+    return: Return
+errors:
+    method_not_exists: 'This method doesn''t exists in this service.'

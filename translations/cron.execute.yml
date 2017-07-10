@@ -4,3 +4,10 @@ messages:
     executing-cron: '正在执行模块的 cron 函数 "%s"'
     success: 所有定时任务执行成功
     lock: '尝试再次运行 cron,当它正在运行'
+examples:
+    -
+        description: 'Execute the cron globally'
+        execution: "drupal cron:execute\n"
+    -
+        description: 'Execute the cron on the specified module'
+        execution: "drupal cron:execute \\\n  <module>\n"

@@ -11,3 +11,7 @@ messages:
     set-environment-placeholders: '设置环境占位符为:'
     missing-inline-placeholders: '缺失行内占位符 "%s"'
     set-inline-placeholders: '设置行内占位符为:'
+examples:
+    -
+        description: 'Providing a file option using full path.'
+        execution: "drupal chain \\\n  --file=\"/path/to/file/chain-file.yml\"\n"
