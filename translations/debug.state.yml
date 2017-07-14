@@ -4,3 +4,10 @@ arguments:
     key: 状态的键
 messages:
     key: 状态的键
+examples:
+    -
+        description: 'List of the states on the site'
+        execution: "drupal debug:state\n"
+    -
+        description: 'Displays a detail of the state install_task tok from the list of states'
+        execution: "drupal debug:state install_task\n"

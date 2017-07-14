@@ -6,3 +6,7 @@ messages:
     executing-update: 执行%2$s模块的更新程序%1$s
     module-update-function-not-found: '"%s"模块没有为"%s"的更新程序'
     executing-required-previous-updates: 执行所需的以前更新
+examples:
+    -
+        description: 'Update all entities'
+        execution: "drupal update:execute\n"

@@ -4,3 +4,10 @@ options:
 messages:
     name: '使用 Libraries 的扩展'
     info: 'Libraries 信息'
+examples:
+    -
+        description: 'List all available libraries'
+        execution: "drupal debug:libraries\n"
+    -
+        description: 'List block library information'
+        execution: "drupal debug:libraries block\n"

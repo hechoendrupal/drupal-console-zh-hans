@@ -19,3 +19,7 @@ warnings:
     module-unavailable: '警告：在当前环境"%s"里下列模块没找到'
 errors:
     directory-exists: '目标目录"%s"不是空的.'
+examples:
+    -
+        description: 'Generate a profile specifying the profile name, the machine name, a description, the core and its module dependencies'
+        execution: "drupal generate:profile  \\\n  --profile=\"NewProfileName\"  \\\n  --machine-name=\"newprofilename\"  \\\n  --description=\"My Useful Profile\"  \\\n  --core=\"8.x\"  \\\n  --dependencies=\"modulename\"\n"

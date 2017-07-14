@@ -1,6 +1,7 @@
 description: 显示帮助
 help: "命令 <info>%command.name%</info> 显示指定命令的帮助：\n\n<info>php %command.full_name% list</info>\n\n以其他格式输出帮助，使用 <comment>--format</comment> 选项：\n\n<info>php %command.full_name% --format=xml list</info>\n\n显示可用命令清单，请使用 <info>list</info> 命令.\n"
 arguments:
+    command-name: 'The command name'
     command_name: 命令名称
 options:
     xml: '以 XML 格式输出'

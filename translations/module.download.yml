@@ -18,6 +18,7 @@ messages:
     error-creating-folder: '创建文件夹 "%s" 失败，请检查权限'
     no-composer-repo: '请在 ~/.console/config.yml 配置 Composer'
     composer: '使用 Composer 下载模块 "%s" 成功'
-tips:
+examples:
     -
-        tip: '在 config.yml 文件中传递一个 «true» 值给 «shellexec_output» 键显示 Composer 的交互输出,或传递 «false» 隐藏输出'
+        description: 'Download module specifying module name and its path'
+        execution: "drupal module:download  modulename  \\\n  --path=\"modules/contrib\"\n"

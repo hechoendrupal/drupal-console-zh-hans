@@ -5,6 +5,7 @@ messages:
     welcome: '欢迎使用 cache:rebuild 命令'
     rebuild: 正在重建缓存，请稍候
     completed: 缓存清楚完成
+    invalid-cache: 'Cache "%s" is invalid.'
     invalid_cache: '缓存 "%s" 是无效的'
 questions:
     cache: 选择缓存（使用上下键，或直接输入）

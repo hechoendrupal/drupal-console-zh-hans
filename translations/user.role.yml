@@ -11,3 +11,10 @@ messages:
     no-role-found: '角色 "%s" 没有找到!'
     add-success: '用户 %1$s 添加角色 %2$s 成功'
     remove-success: '用户 %1$s 移除角色 %2$s 成功'
+examples:
+    -
+        description: 'Add administrator role to the user admin specifying the username and the role'
+        execution: 'drupal user:role  add admin administrator'
+    -
+        description: 'Remove administrator role from the user admin specifying the username and the role'
+        execution: "drupal user:role  remove admin administrator\n"

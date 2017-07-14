@@ -7,3 +7,10 @@ messages:
     class: 类
     method: 方法
     no-events: '这个事件不存在, 尝试执行命令: event:debug'
+examples:
+    -
+        description: 'List all the events that could be debugged'
+        execution: 'drupal debug:evet'
+    -
+        description: 'Show the information for the kernel.request event'
+        execution: 'drupal debug:event kernel.request'

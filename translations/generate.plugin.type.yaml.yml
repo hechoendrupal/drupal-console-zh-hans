@@ -11,3 +11,7 @@ questions:
     class: 输入插件类型类名
     plugin-name: 输入插件类别内部机读名称
     plugin-file-name: 输入插件文件名(比如：MODULE.plugin.filename.yml)
+examples:
+    -
+        description: 'Generate a plugin with Yaml discovery specifying module name, class name, plugin name and plugin file name'
+        execution: "drupal generate:plugin:type:yaml  \\\n  --module=\"modulename\"  \\\n  --class=\"ExamplePlugin\"  \\\n  --plugin-name=\"example_plugin\"  \\\n  --plugin-file-name=\"example.plugin\"\n"

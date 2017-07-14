@@ -14,3 +14,7 @@ questions:
     label: 输入新配置实体的标签
     bundle-of: '当前配置实体作为其 Bundle 的内容实体的名称'
     base-path: 输入配置实体路由的基路径
+examples:
+    -
+        description: 'Generate config entity specifying the module, the entity class, the entity name, its path and label'
+        execution: "drupal generate:entity:config  \\\n  --module=\"modulename\"  \\\n  --entity-class=\"DefaultEntity\"  \\\n  --entity-name=\"default_entity\"  \\\n  --base-path=\"/admin/structure\"  \\\n  --label=\"Default entity\""

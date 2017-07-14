@@ -4,3 +4,7 @@ options: null
 questions: null
 messages:
     help-already-implemented: ' hook help 已经实现,在模块 "%s" 中'
+examples:
+    -
+        description: 'Generate a hook help specifying the module name and the description'
+        execution: "drupal generate:help  \\\n  --module=\"modulename\"  \\\n  --description=\"My Awesome Module\""

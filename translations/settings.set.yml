@@ -11,3 +11,7 @@ messages:
     success: 'Drupal Console 的配置 "%s" 成功设置为 "%s"'
     missing-file: '配置文件 "%s" 缺失, 尝试执行 `drupal init`'
     missing-language: 'Provided language: "%s", not found'
+examples:
+    -
+        description: 'Set application language setting value to "es"'
+        execution: 'drupal settings:set  application.language es'

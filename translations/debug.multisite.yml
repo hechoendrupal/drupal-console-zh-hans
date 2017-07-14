@@ -5,3 +5,7 @@ messages:
     site: 网站
     directory: 目录
     site-format: 站点表示格式：<port>.<domain>.<path>
+examples:
+    -
+        description: 'Displays multisite information'
+        execution: "drupal debug:multisite\n"

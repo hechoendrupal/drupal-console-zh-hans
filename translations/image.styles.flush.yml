@@ -6,3 +6,10 @@ options:
     image-style: 图像样式名称
 questions:
     image-style: '选择 flush 的图像样式'
+examples:
+    -
+        description: 'Flush large image style'
+        execution: 'drupal image:styles:flush  large'
+    -
+        description: 'Flush thumbnail image style'
+        execution: "drupal image:styles:flush  thumbnail\n"

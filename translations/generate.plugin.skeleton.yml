@@ -11,3 +11,7 @@ questions:
 messages:
     plugin-dont-exist: '插件 "%s" 不存在'
     plugin-generator-implemented: '插件 "%s" 已经用一个高级命令生成器, 请使用 "%s"'
+examples:
+    -
+        description: 'Generate a plugin skeleton specifying module name, the plugin id and the class'
+        execution: "drupal generate:plugin:skeleton  \\\n  --module=\"modulename\"  \\\n  --plugin-id=\"link_relation_type\"  \\\n  --class=\"DefaultLinkRelationType\"\n"

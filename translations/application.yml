@@ -39,6 +39,7 @@ messages:
             extra: 'You must execute: "%s" instead'
 errors:
     invalid-command: '命令 "%s" 没有定义'
+    renamed-command: 'Command "%s" was renamed, use "%s" instead.'
 site:
     messages:
         path: 网站路径
@@ -61,3 +62,17 @@ remote:
         private-invalid: 'Private file is invalid'
         invalid-root: 'Invalid root directory'
         console-not-found: 'Drupal Console not found on this site'
+gitbook:
+    messages:
+        title: 'Available Drupal Console Commands'
+        note: Note
+        note-description: 'Drupal Console commands *must* be run from the root of a Drupal 8 installation'
+        command: 'Drupal Console Command'
+        command_description: 'The **"%s"** command "%s"'
+        usage: Usage
+        options: 'Available options'
+        option: Option
+        details: Details
+        arguments: 'Available arguments'
+        argument: Argument
+        examples: Examples

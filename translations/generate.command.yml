@@ -18,3 +18,7 @@ questions:
     container: 您需要访问服务容器吗？
 messages:
     title-not-empty: 标题不能为空
+examples:
+    -
+        description: 'Generate a command specifying the extension name and type, its class and the name.'
+        execution: "drupal generate:command  \\\n  --extension=\"ExtensionName\"  \\\n  --extension-type=\"module\"  \\\n  --class=\"DefaultCommand\"  \\\n  --name=\"CommandName\""

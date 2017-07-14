@@ -17,7 +17,3 @@ examples:
     -
         description: 'Providing file and directory options'
         execution: "drupal config:import:single  \\\n  --file=\"block.block.default_block.yml\" \\\n  --directory=\"/path/to/directory\"\n"
-arguments:
-    name: 配置名称
-    file: 导入文件的路径
-    input-file: 导入文件的路径

@@ -11,3 +11,7 @@ questions:
     class: 输入插件类别类名
     machine-name: 输入插件类别内部机读名称
     label: 输入插件类别标签
+examples:
+    -
+        description: 'Generate a plugin with annotation discovery specifying module name, class name, machine name and label'
+        execution: "drupal generate:plugin:type:annotation  \\\n  --module=\"modulename\"  \\\n  --class=\"ExamplePlugin\"  \\\n  --machine-name=\"example_plugin\"  \\\n  --label=\"Example plugin\"\n"

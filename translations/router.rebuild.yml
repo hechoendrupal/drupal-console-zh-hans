@@ -4,3 +4,7 @@ arguments:
 messages:
     rebuilding: 正在重建路由，请稍候
     completed: 路由重建完成
+examples:
+    -
+        description: 'Rebuild routes'
+        execution: 'drupal router:rebuild'

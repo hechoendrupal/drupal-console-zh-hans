@@ -16,3 +16,7 @@ messages:
     display-name: 名字
     display-description: 简介
     display-paths: 路径
+examples:
+    -
+        description: 'List of views on the site'
+        execution: "drupal debug:views\n"

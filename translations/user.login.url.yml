@@ -5,3 +5,7 @@ messages:
     url: '用户"%s"一次性登录连接: "%s"'
 errors:
     invalid-user: '没法载入用户实体(ID: "%s").'
+examples:
+    -
+        description: 'Get one time login url for user id 1'
+        execution: "drupal user:login:url  1\n"

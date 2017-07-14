@@ -2,13 +2,8 @@ description: 'Poll the watchdog and print new log entries every x seconds'
 arguments:
     duration: 'Duration in seconds which to sleep between database reads'
 messages:
-    warning: | 
-                Do not use in production environments
-                As this script blocks you are advised to only run it on vm's with multiple cores for performance reasons
-                Stop this polling mechanism before you clean/truncate the watchdog table!
-                Quit with ^C
+    warning: "Do not use in production environments\nAs this script blocks you are advised to only run it on vm's with multiple cores for performance reasons\nStop this polling mechanism before you clean/truncate the watchdog table!\nQuit with ^C\n"
 examples:
-    - description: 'Print the log entries on screen every x seconds'
-      execution: |
-        drupal database:log:poll \
-          100
+    -
+        description: 'Print the log entries on screen every x seconds'
+        execution: "drupal database:log:poll \\\n  100\n"

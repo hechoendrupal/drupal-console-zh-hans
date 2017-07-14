@@ -15,3 +15,7 @@ questions:
     plugin-id: '输入插件 ID'
     inputs: common.questions.inputs
     services: common.questions.services
+examples:
+    -
+        description: 'Generate an email plugin specifying the module name, the class, its label and the plugin id'
+        execution: "drupal generate:plugin:mail  \\\n  --module=\"modulename\"  \\\n  --class=\"HtmlFormatterMail\"  \\\n  --label=\"Html formatter mail\"  \\\n  --plugin-id=\"html_formatter_mail\"\n"

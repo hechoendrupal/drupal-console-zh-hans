@@ -19,3 +19,13 @@ questions:
     context-definition-id: '上下文定义 ID'
     context-definition-label: 上下文定义标签
     context-definition-required: 上下文定义是必须的
+examples:
+    -
+        description: 'Generate a plugin condition for a node entity type specifying the module name, the class, the label, its id and the context definition'
+        execution: "drupal generate:plugin:condition  \\\n  --module=\"modulename\"  \\\n  --class=\"ExampleCondition\"  \\\n  --label=\"Example condition\"  \\\n  --plugin-id=\"example_condition\"  \\\n  --context-definition-id=\"entity:node\"  \\\n  --context-definition-label=\"node\"  \\\n  --context-definition-required"
+    -
+        description: 'Generate a plugin condition for language specifying the module name, the class, the label, its id and the context definition'
+        execution: "drupal generate:plugin:condition  \\\n  --module=\"modulename\"  \\\n  --class=\"ExampleCondition\"  \\\n  --label=\"Example condition\"  \\\n  --plugin-id=\"example_condition\"  \\\n  --context-definition-id=\"language\"  \\\n  --context-definition-label=\"Language\"  \\\n  --context-definition-required"
+    -
+        description: 'Generate a plugin condition for role configuration specifying the module name, the class, the label, its id and the context definition'
+        execution: "drupal generate:plugin:condition  \\\n  --module=\"modulename\"  \\\n  --class=\"ExampleCondition\"  \\\n  --label=\"Example condition\"  \\\n  --plugin-id=\"example_condition\"  \\\n  --context-definition-id=\"entity:user_role\"  \\\n  --context-definition-label=\"user_role\"  \\\n  --context-definition-required\n"

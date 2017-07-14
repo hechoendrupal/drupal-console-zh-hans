@@ -7,3 +7,7 @@ messages:
     no-migrations: '没有可用迁移，尝试执行 migrate:setup:migrations 命令'
     tags: 标签
     version: 版本
+examples:
+    -
+        description: 'Displays current migration'
+        execution: "drupal debug:migrate\n"

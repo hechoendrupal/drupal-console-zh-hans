@@ -2,3 +2,7 @@ description: 列出实现定时任务的模块
 messages:
     module-list: '实现 cron 方法的模块'
     module: 模块
+examples:
+    -
+        description: 'This will show a list with modules implementing the cron hook'
+        execution: "drupal debug:cron\n"

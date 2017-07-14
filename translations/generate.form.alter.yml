@@ -7,3 +7,10 @@ messages:
     loading-forms: '从 Webprofiler 模块中导入表单定义'
     hide-form-elements: 选择表单项并隐藏（可选）
     help-already-implemented: 'hook form alter 在模块 "%s" 中已经被实现'
+examples:
+    -
+        description: 'Generate a hook form alter for an empty form specifying the module name'
+        execution: "drupal generate:form:alter  \\\n  --module=\"modulename\""
+    -
+        description: 'Generate a hook form alter with 2 fields specifying the module name and the inputs'
+        execution: "drupal generate:form:alter  \\\n  --module=\"modulename\"  \\\n  --inputs='\"name\":\"inputtext\", \"type\":\"text_format\", \"label\":\"InputText\", \"options\":\"\", \"description\":\"Just an input text\", \"maxlength\":\"\", \"size\":\"\", \"default_value\":\"\", \"weight\":\"0\", \"fieldset\":\"\"'  \\\n  --inputs='\"name\":\"email\", \"type\":\"email\", \"label\":\"Email\", \"options\":\"\", \"description\":\"Just an email input\", \"maxlength\":\"\", \"size\":\"\", \"default_value\":\"\", \"weight\":\"0\", \"fieldset\":\"\"'"

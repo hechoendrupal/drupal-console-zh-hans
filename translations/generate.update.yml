@@ -6,3 +6,7 @@ questions:
     update-n: '请提供 Update N 中的 N 这一数字'
 messages:
     wrong-update-n: '更新数字 "%s" 无效'
+examples:
+    -
+        description: 'Generate an update N hook implementation specifying the module name and the N value'
+        execution: "drupal generate:update  \\\n  --module=\"modulename\"  \\\n  --update-n=\"8001\"\n"

@@ -5,3 +5,7 @@ messages:
     enter-name: 状态名称不能为空
     state-not-exists: '状态 "%s" 不存在'
     deleted: '成功删除状态 "%s"'
+examples:
+    -
+        description: 'Delete state specifying the state name'
+        execution: "drupal state:delete  comment.maintain_entity_statistics\n"

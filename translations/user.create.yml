@@ -15,10 +15,17 @@ questions:
     status: 'User status (empty to skip)'
 messages:
     user-id: 'User ID'
-    username: 'Username'
-    password: 'Password'
-    email: 'E-mail'
-    roles: 'Roles'
-    created: 'Created'
-    status: 'Status'
+    username: Username
+    password: Password
+    email: E-mail
+    roles: Roles
+    created: Created
+    status: Status
     user-created: 'User "%s" was created successfully'
+examples:
+    -
+        description: 'Create user specifying username, password, role, email and status'
+        execution: "drupal user:create  john p455w0rd  \\\n  --roles='authenticated'  \\\n  --email=\"john@anexusit.com\"  \\\n  --status=\"1\""
+    -
+        description: 'Create admin user specifying username, password, role, email and status'
+        execution: "drupal user:create  doe p455w0rd  \\\n  --roles='administrator'  \\\n  --email=\"doe@anexusit.com\"  \\\n  --status=\"1\"\n"

@@ -16,7 +16,3 @@ examples:
     -
         description: 'Provide a configuration directory'
         execution: "drupal config:import  \\\n  --directory=/path/to/config/dir\n"
-arguments:
-    file: 配置文件路径
-    directory: 要导入的配置文件的目录路径.
-    remove-files: 同步后删除文件.
