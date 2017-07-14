@@ -6,6 +6,7 @@ questions:
     config-name: 请选择一个配置单元
 messages:
     no-directory: 创建文件夹出错
+    choose-configuration: 'Choose a configuration'
 examples:
     -
         description: 'Edit system cron configurations with "vim" (default editor).'
