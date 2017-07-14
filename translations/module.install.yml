@@ -28,6 +28,9 @@ messages:
     installing: '安装模块(s) "%s"'
     composer: 'Composer 下载模块成功'
     error-creating-folder: 'Error creating folder "%s", please check your permissions'
+    download-with-composer: 'Module %s was downloaded with Composer.'
+    not-installed-with-composer: 'Module %s seems not to be installed with Composer. Halting.'
+    invalid-name: 'Invalid module name: %s'
 examples:
     -
         description: 'Install module specifying the module name'
