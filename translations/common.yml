@@ -25,7 +25,7 @@ questions:
     inputs:
         confirm: 生成一个表单元素？
         label: 输入标签
-        machine_name: 输入机读名称
+        machine-name: 'Input machine name'
         permission: 生成权限？
         type: 类型
         invalid: '字段类型 "%s" 无效'
@@ -34,6 +34,7 @@ questions:
         weight: 权值
         title: 标题
         fieldset: 字段集
+        machine_name: 输入机读名称
 errors:
     module-dependency: '模块依赖 "%s" 丢失'
     class-name-empty: 类名不能为空

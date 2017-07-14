@@ -18,3 +18,10 @@ questions:
     path: 为服务(s)输入路径
 messages:
     service-already-taken: '服务名称已经在模块 "%s" 中被占用'
+examples:
+    -
+        description: 'Generate a services without interface specifying the module name, the service name, the class and its path'
+        execution: "drupal generate:service  \\\n  --module=\"modulename\"  \\\n  --name=\"modulename.default\"  \\\n  --class=\"DefaultService\"  \\\n  --path-service=\"/modules/custom/modulename/src/\""
+    -
+        description: 'Generate a services with interface specifying the module name, the service name, the class, the interface name and its path'
+        execution: "drupal generate:service  \\\n  --module=\"modulename\"  \\\n  --name=\"modulename.default\"  \\\n  --class=\"DefaultService\"  \\\n  --interface  \\\n  --interface-name=\"InterfaceName\"  \\\n  --path-service=\"/modules/custom/modulename/src/\"\n"

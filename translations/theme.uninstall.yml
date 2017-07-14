@@ -18,3 +18,7 @@ messages:
     invalid-theme-default: 缺省选项只在一个主题中有效
     error-default-theme: '主题"%s"是缺省主题，无法卸载。'
     error-admin-theme: '主题"%s"是管理主题，无法卸载。'
+examples:
+    -
+        description: 'Uninstall theme specifying the name'
+        execution: "drupal theme:uninstall  mytheme\n"

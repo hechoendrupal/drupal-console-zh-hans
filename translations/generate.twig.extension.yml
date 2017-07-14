@@ -5,3 +5,7 @@ options:
     name: 'Twig 扩展名称'
 questions:
     twig-extension: '输入 Twig 扩展名称'
+examples:
+    -
+        description: 'Generate a twig extension specifying the module name, the extension name and its class'
+        execution: "drupal generate:twig:extension  \\\n  --module=\"modulename\"  \\\n  --name=\"modulename.twig.extension\"  \\\n  --class=\"DefaultTwigExtension\"\n"

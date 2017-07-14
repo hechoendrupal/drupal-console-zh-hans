@@ -17,3 +17,10 @@ questions:
     description: 输入插件描述
     default-widget: 输入该插件的默认字段
     default-formatter: 输入该插件的默认字段格式化器
+examples:
+    -
+        description: 'Generate a field type plugin specifying the module name, the class, its label, the plugin id and a description'
+        execution: "drupal generate:plugin:fieldtype  \\\n  --module=\"modulename\"  \\\n  --class=\"ExampleFieldType\"  \\\n  --label=\"Example field type\"  \\\n  --plugin-id=\"example_field_type\"  \\\n  --description=\"My Field Type\""
+    -
+        description: 'Generate a field type plugin with a default widget and formatter specifying the module name, the class, its label, the plugin id and a description'
+        execution: "drupal generate:plugin:fieldtype  \\\n  --module=\"modulename\"  \\\n  --class=\"ExampleFieldType\"  \\\n  --label=\"Example field type\"  \\\n  --plugin-id=\"example_field_type\"  \\\n  --description=\"My Field Type\"  \\\n  --default-widget=\"DefaultWidget\"  \\\n  --default-formatter=\"DefaultFormatter\"\n"

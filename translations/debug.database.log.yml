@@ -18,3 +18,10 @@ messages:
     user: 用户
     severity: 严重等级
     invalid-severity: 严重等级类型无效，过滤器被忽略
+examples:
+    -
+        description: 'List all the entries on the log'
+        execution: 'drupal debug:database:log'
+    -
+        description: 'List specific log entry by Event ID'
+        execution: "drupal debug:database:log 21228\n"

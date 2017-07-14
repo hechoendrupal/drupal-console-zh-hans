@@ -5,3 +5,7 @@ options:
     module: 模块名称
 questions:
     module: 输入新模块名称
+examples:
+    -
+        description: 'Generate the .module file specifying the module name'
+        execution: "drupal generate:module:file  \\\n  --module=\"modulename\""

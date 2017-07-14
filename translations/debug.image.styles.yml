@@ -3,3 +3,7 @@ messages:
     styles-list: 网站中定义的图像样式
     styles-label: 标签
     styles-name: 机读名称
+examples:
+    -
+        description: 'List all images styles on the site'
+        execution: "drupal debug:image:styles\n"

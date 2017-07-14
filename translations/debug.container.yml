@@ -4,8 +4,8 @@ arguments:
     method: 'Method name.'
     arguments: 'Array of Arguments in CSV or JSON format.'
 messages:
-    service_id: 服务ID
-    class_name: 类名
+    service-id: 'Service ID'
+    class-name: 'Class Name'
     service: 服务
     class: 类
     interface: 接口
@@ -15,5 +15,12 @@ messages:
     arguments: Arguments
     method: Method
     return: Return
+    service_id: 服务ID
+    class_name: 类名
 errors:
+    method-not-exists: 'This method doesn''t exists in this service.'
     method_not_exists: 'This method doesn''t exists in this service.'
+examples:
+    -
+        description: 'Displays the views.views_data_helper services'
+        execution: "drupal debug:container views.views_data_helper\n"

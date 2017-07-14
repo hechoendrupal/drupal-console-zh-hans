@@ -17,3 +17,10 @@ questions:
     base-path: 输入内容实体路由的基本路径
     is-translatable: 您的实体可翻译吗
     revisionable: 'Is your entity revisionable'
+examples:
+    -
+        description: 'Generate a content entity specifying the module, the entity class, the entity name, its path and label'
+        execution: "drupal generate:entity:content  \\\n  --module=\"modulename\"  \\\n  --entity-class=\"DefaultEntity\"  \\\n  --entity-name=\"default_entity\"  \\\n  --base-path=\"/admin/structure\"  \\\n  --label=\"Default entity\""
+    -
+        description: 'Generate a translatable and revisionable content entity specifying the module, the entity class, the entity name, its path and label'
+        execution: "drupal generate:entity:content  \\\n  --module=\"modulename\"  \\\n  --entity-class=\"DefaultEntity\"  \\\n  --entity-name=\"default_entity\"  \\\n  --base-path=\"/admin/structure\"  \\\n  --label=\"Default entity\"  \\\n  --is-translatable  \\\n  --revisionable"

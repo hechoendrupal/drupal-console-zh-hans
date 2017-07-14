@@ -13,3 +13,10 @@ messages:
     regions: 区域
     invalid-theme: '主题 "%s" 无效'
     theme-properties: 属性
+examples:
+    -
+        description: 'List of themes on the site'
+        execution: 'drupal debug:theme'
+    -
+        description: 'Bartik theme information'
+        execution: 'drupal debug:theme bartik'

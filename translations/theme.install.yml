@@ -19,3 +19,7 @@ messages:
     theme-default-success: '主题 "%s" 安装成功，并被设置为默认主题'
     disabled-themes: 仅被禁用的主题会出现在自动完成列表中
     invalid-theme-default: 默认主题选项仅对一个主题有效
+examples:
+    -
+        description: 'Install theme specifying the name'
+        execution: "drupal theme:install  mytheme\n"

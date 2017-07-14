@@ -3,3 +3,7 @@ messages:
     queue: 队列
     items: 项(s)
     class: 类
+examples:
+    -
+        description: 'Displays the queues of the application'
+        execution: "drupal debug:queue\n"

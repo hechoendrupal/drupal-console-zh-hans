@@ -27,3 +27,10 @@ questions:
     menu_link_title: 菜单链接标题
     menu_parent: 父级菜单
     menu_link_desc: 菜单链接描述
+examples:
+    -
+        description: 'Generate an empty form with config file specifying the module name, the class, a form id and the path'
+        execution: "drupal generate:form  \\\n  --module=\"modulename\"  \\\n  --class=\"DefaultForm\"  \\\n  --form-id=\"default_form\"  \\\n  --config-file  \\\n  --path=\"/modulename/form/default\""
+    -
+        description: 'Generate a form with 2 fields and a config file specifying the module name, the class, a form id, the inputs and the path'
+        execution: "drupal generate:form  \\\n  --module=\"modulename\"  \\\n  --class=\"DefaultForm\"  \\\n  --form-id=\"default_form\"  \\\n  --config-file  \\\n  --inputs='\"name\":\"inputname\", \"type\":\"text_format\", \"label\":\"InputName\", \"options\":\"\", \"description\":\"Just a text input\", \"maxlength\":\"\", \"size\":\"\", \"default_value\":\"\", \"weight\":\"0\", \"fieldset\":\"\"'  \\\n  --inputs='\"name\":\"email\", \"type\":\"email\", \"label\":\"Email\", \"options\":\"\", \"description\":\"Just an email input\", \"maxlength\":\"\", \"size\":\"\", \"default_value\":\"\", \"weight\":\"0\", \"fieldset\":\"\"'  \\\n  --path=\"/modulename/form/default\""

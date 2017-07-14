@@ -11,3 +11,7 @@ messages:
     module: 模块
     update-n: '更新 N'
     post-update: 更新后的函数
+examples:
+    -
+        description: 'List of pending updates'
+        execution: "drupal debug:update\n"

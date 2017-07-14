@@ -15,3 +15,7 @@ questions:
     plugin-id: '输入插件 ID. 注意: 这与 CKEditor 插件名称对应. 它是 plugin.js 文件中 CKEDITOR.plugins.add() 函数的第一个参数'
     button-name: '输入按钮名称. 注意: 这与 CKEditor 按钮名称相对应. 它是 plugin.js 文件中 editor.ui.addButton() 或 editor.ui.addRichCombo() 函数的第一个参数'
     button-icon-path: 输入按钮图标路径
+examples:
+    -
+        description: 'Generate CKEditor button specifying the module name, the class, the label, its id, the button name and the icon path'
+        execution: "drupal generate:plugin:ckeditorbutton  \\\n  --module=\"modulename\"  \\\n  --class=\"DefaultCKEditorButton\"  \\\n  --label=\"Default ckeditor button\"  \\\n  --plugin-id=\"default ckeditor button\"  \\\n  --button-name=\"Default ckeditor button\"  \\\n  --button-icon-path=\"modules/custom/modulename/js/plugins/default ckeditor button/images/icon.png\""

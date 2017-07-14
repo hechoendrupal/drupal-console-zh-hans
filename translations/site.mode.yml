@@ -16,3 +16,10 @@ messages:
     error-copying-file: 复制文件出错
     error-writing-file: 复制文件出错
     services-file-overwritten: '服务文件"%s"被重写'
+examples:
+    -
+        description: 'Switch system to prod'
+        execution: 'drupal site:mode  prod'
+    -
+        description: 'Switch system to dev'
+        execution: "drupal site:mode  dev\n"

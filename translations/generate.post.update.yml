@@ -7,3 +7,7 @@ questions:
 messages:
     wrong-post-update-name: 'Post update 名称 "%s" 无效'
     post-update-name-already-implemented: 'Post update 出门 "%s" 已经被实现'
+examples:
+    -
+        description: 'Generate an implementation of post update hook specifying the module name and the post update name'
+        execution: "drupal generate:post:update  \\\n  --module=\"modulename\"  \\\n  --post-update-name=\"PostUpdateName\"\n"

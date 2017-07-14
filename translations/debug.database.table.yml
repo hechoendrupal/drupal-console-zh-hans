@@ -10,3 +10,10 @@ messages:
     table: 表
     column: 列
     type: 类型
+examples:
+    -
+        description: 'Show all tables on a database'
+        execution: 'drupal debug:database:table'
+    -
+        description: 'Show fields on the node table or another specified on the argument'
+        execution: "drupal debug:database:table node\n"

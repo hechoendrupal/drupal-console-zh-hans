@@ -12,3 +12,7 @@ messages:
 options:
     target: Target
     property: Property
+examples:
+    -
+        description: ''
+        execution: "drupal debug:site\n"

@@ -31,3 +31,7 @@ questions:
     field-type: '输入和字段格式化器插件和 Widget 插件一起使用的字段类型'
     default-widget: 输入字段类型插件的默认字段
     default-formatter: 输入字段类型插件的默认字段格式化器
+examples:
+    -
+        description: 'Generate field type, widget and formatter plugins specifying the module name, the type (class, label, plugin id and description), the formatter (class, label, plugin id) and the widget (class, label and plugin id)'
+        execution: "drupal generate:plugin:field  \\\n  --module=\"modulename\"  \\\n  --type-class=\"ExampleFieldType\"  \\\n  --type-label=\"Example field type\"  \\\n  --type-plugin-id=\"example_field_type\"  \\\n  --type-description=\"My Field Type\"  \\\n  --formatter-class=\"ExampleFormatterType\"  \\\n  --formatter-label=\"Example formatter type\"  \\\n  --formatter-plugin-id=\"example_formatter_type\"  \\\n  --widget-class=\"ExampleWidgetType\"  \\\n  --widget-label=\"Example widget type\"  \\\n  --widget-plugin-id=\"example_widget_type\"  \\\n  --field-type=\"example_field_type\"  \\\n  --default-widget=\"example_widget_type\"  \\\n  --default-formatter=\"example_formatter_type\"\n"

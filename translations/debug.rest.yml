@@ -6,12 +6,18 @@ options:
 messages:
     id: 'REST 资源 ID'
     label: 标签
-    canonical_url: 规范网址
+    canonical-url: 'Canonical URL'
     status: 状态
     provider: 提供者
     enabled: 启用
     disabled: 禁用
     rest-state: 'REST 状态'
     supported-formats: 支持格式
-    supported_auth: 支持的认证提供者
+    supported-auth: 'Supported Authentication Providers'
     not-found: 'REST 资源 "%s" 没有找到'
+    canonical_url: 规范网址
+    supported_auth: 支持的认证提供者
+examples:
+    -
+        description: 'Displays rest hooks'
+        execution: "drupal debug:rest\n"

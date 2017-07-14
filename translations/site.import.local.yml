@@ -14,3 +14,7 @@ questions:
     directory: '输入 Drupal 安装文件夹'
     name: 输入站点名称
     environment: 输入站点环境名称
+examples:
+    -
+        description: 'Import local drupal project specifying the site name and the path'
+        execution: 'drupal site:import:local  SiteName /private/var/www/vhost/anexusit/drupal8.dev/web'

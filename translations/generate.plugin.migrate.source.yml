@@ -17,5 +17,12 @@ questions:
     alias: 'Enter the alias for the table'
     group-by: 'Enter a field to group by if desired'
     fields:
-      id: 'Enter the field id or press <info>enter</enter> if done'
-      description: 'Enter the field description'
+        id: 'Enter the field id or press <info>enter</enter> if done'
+        description: 'Enter the field description'
+examples:
+    -
+        description: 'Generate a migration source plugin specifying the module name, the class, its plugin id, the table and its alias'
+        execution: "drupal generate:plugin:migrate:source  \\\n  --module=\"modulename\"  \\\n  --class=\"PluginClassName\"  \\\n  --plugin-id=\"plugin_class_name\"  \\\n  --table=\"DefaultTableName\"  \\\n  --alias=\"D\""
+    -
+        description: 'Generate a migration source plugin for specific fields of the users table specifying the module name, the class, its plugin id, the table, its alias and the fields'
+        execution: "drupal generate:plugin:migrate:source  \\\n  --module=\"modulename\"  \\\n  --class=\"DefaultPluginClass\"  \\\n  --plugin-id=\"default_plugin_class\"  \\\n  --table=\"users\"  \\\n  --alias=\"u\"  \\\n  --fields='\"id\":\"id\", \"description\":\"the user id\"'  \\\n  --fields='\"id\":\"username\", \"description\":\"the username\"'  \\\n  --fields='\"id\":\"password\", \"description\":\"the user password\"'  \\\n  --fields='\"id\":\"email\", \"description\":\"the user email\"'\n"

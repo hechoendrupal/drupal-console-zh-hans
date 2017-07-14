@@ -13,3 +13,7 @@ messages:
     success: '以下模块被成功卸载："%s"'
     missing: '无法安装模块"%s"，由于模块"%s"缺失'
     composer-success: '以下模块被从 Composer 中移除: "%s"'
+examples:
+    -
+        description: 'Uninstall the module specifying the module name'
+        execution: "drupal module:uninstall  modulename\n"
