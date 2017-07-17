@@ -1,6 +1,6 @@
-description: 'Rollback one or multiple migrations'
+description: '回滚一个或多个迁移'
 arguments:
-    id: 'Migration id(s)'
+    id: '迁移ID(s)'
 messages:
-    not-available: 'Migration Id "%s" is invalid.Skipping'
-    processing: 'Rollback "%s" completed'
+    not-available: '迁移ID "%s" 无效.已跳过'
+    processing: '回滚 "%s" 完成'

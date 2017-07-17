@@ -1,10 +1,10 @@
-description: 'Install dependencies module in the application'
+description: '在应用中安装依赖模块'
 arguments:
-    module: 'Module or modules to be enabled should be separated by a space'
+    module: '多个模块名需要用空格分开'
 messages:
-    no-depencies: 'Nothing to do. This modules has not dependencies to install'
-    installing: 'Installing module(s) "%s"'
-    success: 'The following module(s) were installed successfully: "%s"'
+    no-depencies: '没有依赖需要安装'
+    installing: '正在安装模块 "%s"'
+    success: '以下模块已成功安装: "%s"'
 examples:
     -
         description: 'Install the dependencies of the specfied module'
