@@ -2,8 +2,8 @@ options:
     class: 类名
     events: 从容器中导入事件
     module: 模块名称
-    extension: 'The extension name.'
-    extension-type: 'The extension type.'
+    extension: '扩展名.'
+    extension-type: '扩展类型.'
     services: 从容器中导入服务
     tags: 从容器设置服务标签
     inputs: 创建一个输入表单
@@ -11,21 +11,21 @@ options:
 questions:
     class: 输入类名
     module: 输入模块名称
-    extension: 'Enter the extension name'
-    extension-type: 'Enter the extension type'
+    extension: '输入扩展名'
+    extension-type: '输入扩展类型'
     confirm: 确定开始生成吗？
     canceled: 生成命令已取消
     events:
-        message: "\n输入事件名称或使用上下键。\n这是选填的，按下 <info>enter</info> 键 <info>continue</info>\n"
+        message: "\n输入事件名称或使用上下键。\n这是选填的，按下 <info>enter</info> 键 <info>继续</info>\n"
         name: 输入事件名称
     services:
         confirm: 从容器中导入服务？
-        message: "\n输入服务名称或使用上下键。\n这是选填的，按下 <info>enter</info> 键 <info>continue</info>\n"
+        message: "\n输入服务名称或使用上下键。\n这是选填的，按下 <info>enter</info> 键 <info>继续</info>\n"
         name: 输入服务名称
     inputs:
         confirm: 生成一个表单元素？
         label: 输入标签
-        machine-name: 'Input machine name'
+        machine-name: '输入机器名'
         permission: 生成权限？
         type: 类型
         invalid: '字段类型 "%s" 无效'
