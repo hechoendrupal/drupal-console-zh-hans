@@ -1,16 +1,14 @@
-description: 编辑配置
+description: '使用文本编辑器更改配置对象。'
 arguments:
-    config-name: 配置名称
-    editor: 编辑器
+    config-name: '配置对象名称，例如 "user.settings"。'
+    editor: '编辑器，例如 "vim" 或 "gedit"。'
 questions:
-    config-name: 请选择一个配置单元
+    config-name: '选择一个配置对象'
 messages:
-    no-directory: 创建文件夹出错
-    choose-configuration: 'Choose a configuration'
+    no-directory: '在创建目录时发生错误："%s"'
+    choose-configuration: '选择一个配置'
 examples:
-    -
-        description: 'Edit system cron configurations with "vim" (default editor).'
-        execution: 'drupal config:edit system.cron'
-    -
-        description: 'Edit system cron configurations with "gedit".'
-        execution: 'drupal config:edit system.cron gedit'
+    - description: '使用 "vim"（默认编辑器）编辑系统 cron 配置。'
+      execution: 'drupal config:edit system.cron'
+    - description: '使用用 "gedit" 编辑系统 cron 配置。'
+      execution: 'drupal config:edit system.cron gedit'

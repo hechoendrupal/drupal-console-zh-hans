@@ -1,18 +1,17 @@
-description: 输出选取目录中和使用中不同的配置项目.
+description: '比对目录，输出与活动配置不同的配置项。'
 arguments:
-    directory: '要对比的目录. 缺省使用配置目录.'
+    directory: '对比的目录。如果省略，则从 Drupal 配置目录中进行选择。'
 options:
-    reverse: 反向显示差异(就是说：从一个目录到使用配置的比较).
+    reverse: '反向查看变化（比如，比对目录与活动配置的差异）。'
 questions:
-    directories: '配置目录:'
+    directories: '配置目录：'
 table:
     headers:
-        collection: 集合
-        config-name: 配置项
+        collection: '集合'
+        config-name: '配置项'
         operation: 操作
 messages:
-    no-changes: 没有更改.
+    no-changes: '没有变化。'
 examples:
-    -
-        description: 'Provide a config directory'
-        execution: 'drupal config:diff ../config/path'
+    - description: '提供一个配置目录'
+      execution: 'drupal config:diff ../config/path'
