@@ -1,51 +1,52 @@
 options:
     class: 类名
-    events: 从容器中导入事件
-    module: 模块名称
-    extension: '扩展名.'
-    extension-type: '扩展类型.'
-    services: 从容器中导入服务
-    tags: 从容器设置服务标签
-    inputs: 创建一个输入表单
+    events: 从容器中加载事件
+    module: 模块名
+    extension: '扩展名。'
+    extension-type: '扩展类型。'
+    services: '从容器加载服务。'
+    tags: '从容器设置服务标签。'
+    inputs: '在表单中创建输入。'
     permissions: 创建权限
 questions:
-    class: 输入类名
-    module: 输入模块名称
+    class: '输入类的名称'
+    module: '输入模块名称'
     extension: '输入扩展名'
     extension-type: '输入扩展类型'
-    confirm: 确定开始生成吗？
-    canceled: 生成命令已取消
+    confirm: 您确认生成吗？
+    canceled: '命令生成被取消。'
     events:
-        message: "\n输入事件名称或使用上下键。\n这是选填的，按下 <info>enter</info> 键 <info>继续</info>\n"
-        name: 输入事件名称
+        message: "\n键入事件名称或使用上下键。\n这是选填的，按下 <info>enter</info> 键 <info>继续</info>\n"
+        name: '请输入事件名称'
     services:
-        confirm: 从容器中导入服务？
-        message: "\n输入服务名称或使用上下键。\n这是选填的，按下 <info>enter</info> 键 <info>继续</info>\n"
-        name: 输入服务名称
+        confirm: '是否要从容器加载服务'
+        message: "\n键入服务名称或使用上下键。\n这是选填的，按下 <info>enter</info> 键 <info>继续</info>\n"
+        name: '输入您的服务'
     inputs:
-        confirm: 生成一个表单元素？
+        confirm: '要生成表单结构吗？'
         label: 输入标签
-        machine-name: '输入机器名'
-        permission: 生成权限？
-        type: 类型
-        invalid: '字段类型 "%s" 无效'
-        description: 描述
-        default-value: 默认值
-        weight: 权值
-        title: 标题
+        machine-name: '输入机读名称'
+        permission: '要生成权限吗？'
+        type: '新字段类型（按<返回>停止添加字段）'
+        invalid: '字段类型 "%s" 是无效的。'
+        description: 说明
+        default-value:
+            default-value: '默认值'
+            checkboxes: '默认值以逗号分隔'
+        weight: '输入项的权重'
+        title: '标题'
         fieldset: 字段集
-        machine_name: 输入机读名称
 errors:
-    module-dependency: '模块依赖 "%s" 丢失'
-    class-name-empty: 类名不能为空
-    invalid-file-path: 必须提供一个有效的文件路径
-    module-exist: '模块 "%s" 已经存在'
+    module-dependency: '缺少模块依赖， "%s" 没有安装。请用 module:install 安装它。'
+    class-name-empty: '类名不能为空'
+    invalid-file-path: '您必须提供有效的文件路径。'
+    module-exist: '模块 "%s" 已经存在。'
     machine-name-duplicated: '机读名称 "%s" 重复'
 status:
     enabled: 启用
-    disabled: 禁用
+    disabled: 停用
 messages:
-    canceled: 生成命令已取消
+    canceled: '生成被取消了'
     drupal-core: 'Drupal 核心'
-    move-phar: '在您的系统中，任何地方都可以访问 Drupal Console'
-    quick-start: '下载、安装 Drupal 8 以及启动服务器一条龙'
+    move-phar: '从系统的任何地方访问 Drupal Console'
+    quick-start: '下载，安装和伺服 Drupal 8'
