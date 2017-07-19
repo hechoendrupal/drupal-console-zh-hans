@@ -16,18 +16,18 @@ questions:
     confirm: 您确认生成吗？
     canceled: '命令生成被取消。'
     events:
-        message: "\n键入事件名称或使用上下键。\n这是选填的，按下 <info>enter</info> 键 <info>继续</info>\n"
+        message: "\n键入事件名称或使用上下键。\n这是选填的，按下<info>回车</info>键<info>继续</info>\n"
         name: '请输入事件名称'
     services:
         confirm: '是否要从容器加载服务'
-        message: "\n键入服务名称或使用上下键。\n这是选填的，按下 <info>enter</info> 键 <info>继续</info>\n"
+        message: "\n键入服务名称或使用上下键。\n这是选填的，按下<info>回车</info>键<info>继续</info>\n"
         name: '输入您的服务'
     inputs:
         confirm: '要生成表单结构吗？'
         label: 输入标签
         machine-name: '输入机读名称'
         permission: '要生成权限吗？'
-        type: '新字段类型（按<返回>停止添加字段）'
+        type: '新字段类型（按<回车>停止添加字段）'
         invalid: '字段类型 "%s" 是无效的。'
         description: 说明
         default-value:
@@ -37,7 +37,7 @@ questions:
         title: '标题'
         fieldset: 字段集
 errors:
-    module-dependency: '缺少模块依赖， "%s" 没有安装。请用 module:install 安装它。'
+    module-dependency: '缺少模块依赖，"%s" 没有安装。请用 module:install 安装它。'
     class-name-empty: '类名不能为空'
     invalid-file-path: '您必须提供有效的文件路径。'
     module-exist: '模块 "%s" 已经存在。'
