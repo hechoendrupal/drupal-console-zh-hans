@@ -1,15 +1,15 @@
-description: 'Import module config.'
+description: '导入模块配置'
 help: ''
 options:
     bundle: 'Bundle name'
 arguments:
-    packages: 'Package name'
+    packages: '包名'
 questions:
-    packages: 'Enter package name to import'
+    packages: '输入要导入的包名'
 messages:
-    no-packages: 'No packages available.'
-    not-available: 'Package %s, not available.'
-    importing: 'Importing package %s.'
-    uninstall: 'Package %s already installed.'
-    reverting: 'Reverting package %s.'
-    nothing: 'Nothing to import.'
+    no-packages: '没有可用的包.'
+    not-available: '包 %s 不可用。'
+    importing: '正在导入 %s.'
+    uninstall: '包 %s 已安装.'
+    reverting: '正在还原 %s.'
+    nothing: '没有要导入的.'
