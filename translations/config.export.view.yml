@@ -1,20 +1,22 @@
-description: 导出视图
+description: '在提供的模块中导出 YAML 格式的视图，以便在其他网站中重复使用。'
 messages:
-    view_exported: 正在导出视图
-    depencies-included: '以下模块依赖被包含 "%s"'
+    view_exported: '视图成功导出'
+    depencies-included: '以下模块依赖关系被包括在 "%s"'
 questions:
-    view: 视图
-    optional-config: 是否导出视图作为一个模块的可选配置
-    include-module-dependencies: '在模块的 info 文件中包含相关依赖模块'
+    view: '要导出的视图'
+    optional-config: '将模块中的配置导出为可选配置'
+    include-module-dependencies: '在模块信息 YAML 文件中包含视图模块依赖关系'
 arguments:
     view-id: '视图 ID'
 options:
-    optional-config: 导出视图作为模块的可选配置
-    include-module-dependencies: '在模块的 info 文件中包含相关依赖模块'
+    optional-config: '将配置导出为模块中的可选 YAML 配置'
+    include-module-dependencies: '在模块信息 YAML 文件中包含视图模块依赖关系'
 examples:
-    -
-        description: 'Provide a view id'
-        execution: 'drupal config:export:view viewid'
-    -
-        description: 'You can provide the interactive values like parameter.'
-        execution: "drupal config:export:view viewid \\\n  --module=\"modulename\" \\\n  --optional-config \\\n  --include-module-dependencies\n"
+    - description: '提供视图ID'
+      execution: drupal config:export:view viewid
+    - description: '您可以提供交互式值，如参数。'
+      execution: |
+        drupal config:export:view viewid \
+          --module="modulename" \
+          --optional-config \
+          --include-module-dependencies
