@@ -1,18 +1,20 @@
-description: 导出内容类型及其字段
+description: '导出特定的内容类型及其字段。'
 arguments:
-    content-type: 内容类型
+    content-type: '要导出的内容类型'
 questions:
-    content-type: 内容类型
-    optional-config: 导出内容类型作为模块的可选配置
+    content-type: '要导出的内容类型'
+    optional-config: '将模块中的内容类型导出为可选配置'
 messages:
-    content-type-exported: 'Exporting content type'
-    content_type_exported: 正在导出内容类型
+    content-type-exported: '导出内容类型'
 options:
-    optional-config: 导出内容类型作为模块中的可选配置
+    optional-config: '将内容类型导出为模块中的可选 YAML 配置'
 examples:
-    -
-        description: 'Provide a content type  and module name'
-        execution: "drupal config:export:content:type page \\\n  --module=\"demo\""
-    -
-        description: 'If you want export content type provide the optional config'
-        execution: "drupal config:export:content:type page \\\n  --module=\"demo\" \\\n  --optional-config \n"
+    - description: '提供内容类型和模块名称'
+      execution: |
+        drupal config:export:content:type page \
+          --module="demo"
+    - description: '如果要导出内容类型提供可选配置'
+      execution: |
+        drupal config:export:content:type page \
+          --module="demo" \
+          --optional-config
