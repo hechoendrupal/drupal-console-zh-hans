@@ -1,10 +1,9 @@
-description: 'Validate a drupal config against its schema'
+description: '根据其 Schema 验证 drupal 配置'
 options: {  }
 arguments: {  }
 messages:
-    success: 'Config was successfully validated'
-    no-conf: 'Config with this name does not exist'
+    success: '配置已成功验证'
+    no-conf: '具有此名称的配置不存在'
 examples:
-    -
-        description: 'Provide the configuration name.'
-        execution: 'drupal config:validate configuration.name'
+    - description: '提供配置名称。'
+      execution: 'drupal config:validate configuration.name'
