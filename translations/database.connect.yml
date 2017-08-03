@@ -1,12 +1,13 @@
-description: 如果有数据库客户端，启动它
+description: "显示 DB 连接"
 arguments:
-    database: 'settings.php 文件中 Database 的键'
+  database: "来自 settings.php 的数据库键"
 messages:
-    database-not-found: '数据库 "%s" 链接信息没有找到'
-    database-not-supported: '该类型数据库 "%s" 还没有被支持'
+    database-not-found: '数据库 "%s" 没有找到连接信息'
+    database-not-supported: '数据库类型 "%s" 还不支持'
     database-client-not-found: '数据库客户端 "%s" 没有找到'
-    connection: '连接："%s"'
+    connection: '连接: "%s"'
 examples:
-    -
-        description: 'Connects to an specified database, or the default if not arguments passed'
-        execution: "drupal database:connect \\\n  <database>\n"
+    - description: '连接到指定的数据库，或默认数据库，如果没有传入参数'
+      execution: |
+        drupal database:connect \
+          <database>
