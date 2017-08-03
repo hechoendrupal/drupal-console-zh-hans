@@ -1,13 +1,14 @@
-description: 还原数据库
+description: "还原数据库结构和内容。"
 arguments:
-    database: 'settings.php 文件中 Database 的键'
+    database: "来自 settings.php 的数据库键"
 options:
-    file: 数据库备份文件文件名
+    file: '数据库备份文件文件名'
 messages:
-    success: 数据库导入成功：
-    no-file: 文件选项缺失
-help: 还原数据库结构和内容
+    success: "数据库导入自："
+    no-file: "缺少文件选项"
+help: "还原数据库结构和内容"
 examples:
-    -
-        description: 'Restore the database file dump to the database default or another one specified'
-        execution: "drupal database:restore \\\n  --file='/srv/dump/db.sql'\n"
+    - description: '将数据库转储文件还原到默认或指定数据库'
+      execution: |
+        drupal database:restore \
+          --file='/srv/dump/db.sql'

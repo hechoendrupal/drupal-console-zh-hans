@@ -1,9 +1,14 @@
-description: 'Poll the watchdog and print new log entries every x seconds'
+description: '轮询看门狗并每 x 秒打印一次新的日志条目'
 arguments:
-    duration: 'Duration in seconds which to sleep between database reads'
+    duration: '在数据库读取之间休眠的持续时间（秒）'
 messages:
-    warning: "Do not use in production environments\nAs this script blocks you are advised to only run it on vm's with multiple cores for performance reasons\nStop this polling mechanism before you clean/truncate the watchdog table!\nQuit with ^C\n"
+    warning: | 
+                不要在生产环境中使用
+                由于此脚本阻塞，因此出于性能原因，建议您使用多内核虚拟机进行运行
+                在清理/截断看门狗表之前停止此轮询机制！
+                用 ^ C 退出
 examples:
-    -
-        description: 'Print the log entries on screen every x seconds'
-        execution: "drupal database:log:poll \\\n  100\n"
+    - description: '每隔 x 秒在屏幕上打印日志条目'
+      execution: |
+        drupal database:log:poll \
+          100

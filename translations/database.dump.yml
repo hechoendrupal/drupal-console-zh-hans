@@ -1,15 +1,17 @@
-description: 导出数据库
+description: "转储数据库结构和内容"
 arguments:
-    database: 'settings.php 文件中 Database 的键'
+  database: "来自 settings.php 的数据库键"
 options:
-    file: 数据库备份文件名称
-    gz: 'Pass this option if you want the sql result file gzipped'
+  file: '数据库备份文件名称'
+  gz: '如果您希望将 sql 结果文件使用 gzip 压缩，请传递此选项'
 messages:
-    success: 数据库已导出到：
+    success: "数据库已导出到："
 examples:
-    -
-        description: 'Dump default database or the one specified on the argument'
-        execution: "drupal database:dump \\\n  <database>"
-    -
-        description: 'Dump in gz compressed format'
-        execution: "drupal database:dump \\\n  --gz"
+    - description: '转储默认数据库或参数指定的数据库'
+      execution: |
+        drupal database:dump \
+          <database>
+    - description: '以 gz 压缩格式转储'
+      execution: |
+        drupal database:dump \
+          --gz
