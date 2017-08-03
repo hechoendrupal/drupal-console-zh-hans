@@ -1,37 +1,39 @@
-description: 创建评论
-help: '<info>create:comments</info> 命令用于创建评论(s)'
-welcome: '欢迎使用 Drupal 评论生成器'
+description: '为您的 Drupal 8 应用程序创建评论。'
+help: '<info>create:comments</info> 命令可以帮助您创建评论。'
+welcome: '欢迎来到 Drupal 评论生成器'
 arguments:
-    node-id: '创建评论的节点 ID'
+  node-id: '创建评论依附的节点 ID'
 options:
-    limit: 创建评论数量
-    title-words: 评论标题中的最大单词数量
-    time-range: 评论的创建时间区间
+    limit: '您想要创建多少条评论'
+    title-words: '评论标题中的最大单词数量'
+    time-range: '评论的创建时间范围'
 questions:
-    node-id: '创建评论的节点 ID'
-    content-type: 选择用于创建评论的内容类型(s)
-    limit: 输入生成评论数量
-    title-words: 输入标题中使用的最大单词数量
-    time-range: 评论的创建时间区间
+    node-id: '创建评论依附的节点 ID'
+    content-type: '选择创建评论使用的内容类型'
+    limit: '输入您希望生成的评论数量'
+    title-words: '输入标题中的最大单词数量'
+    time-range: '评论的创建时间范围？'
     time-ranges:
-        - 现在
-        - '1 小时以前'
-        - '1 天以前'
-        - '1 周以前'
-        - '1 月以前'
-        - '1 年以前'
+        - '现在'
+        - '1 小时前'
+        - '1 天前'
+        - '1 周前'
+        - '1 个月前'
+        - '1 年前'
 messages:
-    node-id: '节点 Id'
-    comment-id: '评论 Id'
-    content-type: 内容类型
-    title: 标题
-    created: 创建时间
-    invalid-content-types: '内容类型(s) "%s" 无效'
-    created-comments: '创建 "%s" 评论成功'
+    node-id: '节点 ID'
+    comment-id: '评论 ID'
+    content-type: '内容类型'
+    title: '标题'
+    created: '创建时间'
+    invalid-content-types: '内容类型 "%s" 无效'
+    created-comments: '评论 "%s" 创建成功'
 examples:
-    -
-        description: 'Provide the node id where the comments will be generated.'
-        execution: 'drupal create:comments  node-id'
-    -
-        description: 'Provide number of comments to generate, max title words and time range.'
-        execution: "drupal create:comments  node-id \\\n  --limit=\"2\" \\\n  --title-words=\"5\" \\\n  --time-range=\"1\"\n"
+    - description: '提供生成评论的节点 ID。'
+      execution: drupal create:comments node-id
+    - description: '提供生成的评论数量，最大标题字和时间范围。'
+      execution: |
+        drupal create:comments node-id \
+          --limit="2" \
+          --title-words="5" \
+          --time-range="1"

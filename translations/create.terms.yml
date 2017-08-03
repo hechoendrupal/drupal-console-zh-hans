@@ -1,25 +1,26 @@
-description: 生成分类术语
-help: '命令 <info>create:terms</info> 用于生成分类术语'
-welcome: 欢迎使用分类术语生成器
+description: '为您的 Drupal 8 应用程序创建术语。'
+help: '<info>create:terms</info> 命令可以帮助您创建术语。'
+welcome: '欢迎来到 Drupal 术语创建者'
 arguments:
-    vocabularies: 用于生成分类术语的词汇表(s)
+  vocabularies: '用于创建术语的词汇表'
 options:
-    limit: 生成多少个分类术语
-    name-words: 分类术语名称允许的最多单词数量
+    limit: '您要创建多少个术语？'
+    name-words: '术语名称中单词的最多数量'
 questions:
-    vocabularies: 选择用于生成分类术语的词汇表(s)
-    limit: 输入生成分类术语的数量
-    name-words: 输入分类术语名称允许的最多单词数量
+    vocabularies: '选择要用于创建术语的词汇表'
+    limit: '键入您要创建的术语数量？'
+    name-words: '键入术语名称中单词的最大数量'
 messages:
-    term-id: '分类术语 Id'
-    vocabulary: 词汇表
-    name: 名称
-    invalid-vocabularies: '词汇表(s) "%s" 无效'
-    created-terms: '生成 "%s" 分类词汇成功'
+    term-id: '术语 ID'
+    vocabulary: '词汇表'
+    name: '名称'
+    invalid-vocabularies: '词汇表 "%s" 无效'
+    created-terms: '术语 "%s" 创建成功'
 examples:
-    -
-        description: 'Provide the vocabulary term name.'
-        execution: 'drupal create:terms vocabulary'
-    -
-        description: 'Provide the limit of terms to add and limit of title words.'
-        execution: "drupal create:terms tags \\\n  --limit=\"10\" \\\n  --name-words=\"5\"\n"
+    - description: '提供词汇表术语名称。'
+      execution: drupal create:terms vocabulary
+    - description: '提供添加术语和标题用词的限制条件。'
+      execution: |
+        drupal create:terms tags \
+          --limit="10" \
+          --name-words="5"
