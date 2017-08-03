@@ -1,18 +1,22 @@
-description: 清除事件日志
+description: '从 DBLog 表中删除事件，过滤器可用'
 arguments:
     event-id: 'DBLog 事件 ID'
 options:
-    type: 用指定类型过滤事件
-    severity: 用指定的严重等级过滤事件
-    user-id: 用指定的用户ID过滤事件
+    type: '按特定类型过滤事件'
+    severity: '按特定级别的严重等级过滤事件'
+    user-id: '按特定用户 ID 过滤事件'
 messages:
-    event-deleted: '事件 "%s" 已删除'
-    clear-error: 清除失败，请检查所使用的过滤器
-    clear-sucess: 清除成功
+    event-deleted: '事件 "%s" 被删除'
+    clear-error: '清除过程失败，请检查使用的过滤器'
+    clear-sucess: '清除事件成功'
 examples:
-    -
-        description: 'Clear the database log from DBLog table'
-        execution: "drupal database:log:clear \\\n  <database>"
-    -
-        description: 'Clear the database log from DBLog table using filters'
-        execution: "drupal database:log:clear \\\n  <database> \\\n  --type=TYPE \\\n  --severity=SEVERITY"
+    - description: '从 DBLog 表中清除数据库日志'
+      execution: |
+        drupal database:log:clear \
+          <database>
+    - description: '使用过滤器从 DBLog 表中清除数据库日志'
+      execution: |
+        drupal database:log:clear \
+          <database> \
+          --type=TYPE \
+          --severity=SEVERITY
