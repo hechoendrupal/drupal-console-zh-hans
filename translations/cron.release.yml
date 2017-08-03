@@ -1,7 +1,7 @@
-description: 释放定时任务锁
+description: '释放定时任务系统锁，再次重新运行定时任务'
 messages:
-    released: 定时任务锁被成功释放
+    released: '定时任务锁已成功释放'
 examples:
-    -
-        description: 'Execute the cron globally'
-        execution: "drupal cron:execute\n"
+    - description: '全局执行定时任务'
+      execution: |
+        drupal cron:execute
