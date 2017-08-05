@@ -1,14 +1,22 @@
-description: 'Displays all user permissions.'
-help: "Display all user permissions and also list all user permissions from a specific user role.\n\nList all user permissions:\n<info>drupal permission:debug</info>\n\nList all user permissions from a user role\n<info>drupal permission:debug authenticated</info>\n"
+description: '显示所有用户权限。'
+help: |
+  显示所有用户权限，并列出特定用户角色的所有用户权限。
+
+  列出所有用户权限：
+  <info>drupal permission:debug</info>
+
+  从用户角色列出所有用户权限
+  <info>drupal permission:debug authenticated</info>
+
 arguments:
-    role: 'User role'
+    role: '用户角色'
 messages:
-    role-error: 'Role "%s" does not exist. Please use an existing user role.'
+    role-error: '角色 "%s" 不存在。请使用现有的用户角色。'
 table-headers:
-    permission-name: 'Permission name'
-    permission-label: 'Permission Label'
-    permission-role: Role
+    permission-name: '权限名称'
+    permission-label: '权限标签'
+    permission-role: '角色'
 examples:
-    -
-        description: 'Displays all the permissions availables on the site'
-        execution: "drupal debug:permission\n"
+    - description: '显示站点上可用的所有权限'
+      execution: |
+        drupal debug:permission

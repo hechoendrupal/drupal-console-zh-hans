@@ -1,12 +1,14 @@
-description: 'Validate a schema implementation before a module is installed.'
-help: 'Helper function to validate a schema implementation before a module is installed. Specify the config and the schema file paths as arguments and validation will be run against them, making schema easier to debug without time consuming installs'
-options: {  }
-arguments: {  }
+description: '在安装模块之前验证 schema 实现。'
+help: '在模块安装之前验证 schema 实现的帮助函数。将配置和 schema 文件路径指定为参数，并针对它们运行验证，使 schema 更容易调试，而无需耗费时间安装'
+options: {}
+arguments: {}
 messages:
-    noConfFile: 'Config file at the specified path does not exist'
-    noConfSchema: 'Config schema at the specified path does not exist'
-    noSchemaName: 'Could not find schema definition in schema file. Using definition name:'
+    noConfFile: '指定路径的配置文件不存在'
+    noConfSchema: '指定路径的配置 schema 不存在'
+    noSchemaName: '在模式文件中找不到 schema 定义。使用定义名称：'
 examples:
-    -
-        description: ''
-        execution: "drupal debug:config:validate \\\n  /path/to/file \\\n  /path/to/schema-filepath\n"
+    - description: '验证 schema'
+      execution: |
+        drupal debug:config:validate \
+          /path/to/file \
+          /path/to/schema-filepath

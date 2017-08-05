@@ -1,13 +1,13 @@
-description: 显示当前状态的键(s)
-help: 显示当前状态的键(s)
+description: '显示当前的状态键。'
+help: '显示当前的状态键。'
 arguments:
-    key: 状态的键
+  key: '调试的状态键。'
 messages:
-    key: 状态的键
+  key: '状态键'
 examples:
-    -
-        description: 'List of the states on the site'
-        execution: "drupal debug:state\n"
-    -
-        description: 'Displays a detail of the state install_task tok from the list of states'
-        execution: "drupal debug:state install_task\n"
+    - description: '网站上的状态列表'
+      execution: |
+        drupal debug:state
+    - description: '从状态列表中显示状态 install_task 的详细信息'
+      execution: |
+        drupal debug:state install_task

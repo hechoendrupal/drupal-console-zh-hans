@@ -1,9 +1,9 @@
-description: 配置文件调试
-help: '<info>config:settings:debug</info>命令帮助显示当前的配置文件里的当前的键：值'
-welcome: 欢迎使用Drupal调试配置命令
+description: '显示当前设置文件的键值对。'
+help: '<info>config:settings:debug</info> 命令可帮助您显示设置文件当前的键值对。'
+welcome: '欢迎使用 Drupal 设置配置调试命令'
 messages:
-    current: '配置文件里的当前 Key:Value'
+    current: '当前设置文件的键值对。'
 examples:
-    -
-        description: 'Displays key:value as per the settings file'
-        execution: "drupal debug:config:settings\n"
+    - description: '根据设置文件显示键值对'
+      execution: |
+        drupal debug:config:settings

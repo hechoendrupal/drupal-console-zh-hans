@@ -1,19 +1,23 @@
-description: 显示路由
+description: '显示应用程序的当前路由或特定路由的信息'
 arguments:
-    route-name: 路由名称
+    route-name: '路由名称'
 messages:
-    name: 路由名称
-    class: 类路径
+    name: '路由名称'
+    class: '类路径'
     route: 路由
-    path: 类路径
+    path: 路径
     defaults: 默认
-    requirements: Requirements
+    requirements: 要求
     options: 选项
-    pattern: 模式
 examples:
-    -
-        description: 'Displays current routes for the application'
-        execution: 'drupal rod'
-    -
-        description: 'Displays details for the route user.page (/user)'
-        execution: 'drupal rod user.page'
+    - description: '显示应用程序的当前路由'
+      execution: 'drupal rod'
+    - description: '显示路由 user.page (/user) 的详细信息'
+      execution: 'drupal rod user.page'
+examples:
+    - description: '显示网站上的路由列表'
+      execution: |
+        drupal debug:router
+    - description: '显示 user.login 的信息'
+      execution: |
+        drupal debug:router user.login

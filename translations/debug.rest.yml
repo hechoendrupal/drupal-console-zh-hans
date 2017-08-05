@@ -1,23 +1,21 @@
-description: '显示当前 REST 资源'
+description: '显示应用程序的当前 REST 资源'
 arguments:
-    resource-id: 'REST 资源 ID'
+    resource-id: 'REST ID'
 options:
-    status: 'REST 资源状态 启用 | 禁用'
+    status: 'REST 资源状态 enabled | disabled'
 messages:
-    id: 'REST 资源 ID'
+    id: 'REST ID'
     label: 标签
-    canonical-url: 'Canonical URL'
+    canonical-url: '标准 URL'
     status: 状态
     provider: 提供者
     enabled: 启用
     disabled: 禁用
     rest-state: 'REST 状态'
-    supported-formats: 支持格式
-    supported-auth: 'Supported Authentication Providers'
-    not-found: 'REST 资源 "%s" 没有找到'
-    canonical_url: 规范网址
-    supported_auth: 支持的认证提供者
+    supported-formats: '支持的格式'
+    supported-auth: '支持的认证提供商'
+    not-found: 'REST 资源 "%s" 未找到'
 examples:
-    -
-        description: 'Displays rest hooks'
-        execution: "drupal debug:rest\n"
+    - description: '显示 REST 钩子'
+      execution: |
+        drupal debug:rest

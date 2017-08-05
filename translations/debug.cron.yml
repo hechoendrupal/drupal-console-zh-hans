@@ -1,8 +1,8 @@
-description: 列出实现定时任务的模块
+description: '实现计划任务的模块列表'
 messages:
     module-list: '实现 cron 方法的模块'
     module: 模块
 examples:
-    -
-        description: 'This will show a list with modules implementing the cron hook'
-        execution: "drupal debug:cron\n"
+    - description: '这将显示实现 cron 钩子的模块列表'
+      execution: |
+        drupal debug:cron

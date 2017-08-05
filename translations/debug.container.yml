@@ -1,26 +1,23 @@
-description: 显示当前服务
+description: '显示应用程序的当前服务。'
 arguments:
-    service: 服务名称
-    method: 'Method name.'
-    arguments: 'Array of Arguments in CSV or JSON format.'
+    service: '服务名称'
+    method: '方法名称'
+    arguments: 'CSV 或 JSON 格式的参数数组。'
 messages:
-    service-id: 'Service ID'
-    class-name: 'Class Name'
-    service: 服务
-    class: 类
-    interface: 接口
-    parent: 父类
-    variables: 变量
-    methods: 方法
-    arguments: Arguments
-    method: Method
-    return: Return
-    service_id: 服务ID
-    class_name: 类名
+    service-id: '服务 ID'
+    class-name: '类名称'
+    service: '服务'
+    class: '类'
+    interface: '接口 (多个)'
+    parent: '父类'
+    variables: '变量'
+    methods: '方法'
+    arguments: '参数'
+    method: '方法'
+    return: '返回'
 errors:
-    method-not-exists: 'This method doesn''t exists in this service.'
-    method_not_exists: 'This method doesn''t exists in this service.'
+    method-not-exists: "此服务中不存在此方法。"
 examples:
-    -
-        description: 'Displays the views.views_data_helper services'
-        execution: "drupal debug:container views.views_data_helper\n"
+    - description: '显示 views.views_data_helper 服务'
+      execution: |
+        drupal debug:container views.views_data_helper

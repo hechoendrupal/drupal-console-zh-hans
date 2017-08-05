@@ -1,22 +1,22 @@
-description: 显示网站当前视图资源
+description: '显示应用程序的当前视图资源'
 arguments:
-    view-id: 视图ID
-    view-tag: 视图标签
-    view-status: 视图状态(已启用|已禁用)
+    view-id: '视图 ID'
+    view-tag: '视图标签'
+    view-status: '视图状态 (Enabled|Disabled)'
 messages:
-    view-id: 视图ID
-    view-name: 视图名字
-    description: 简介
+    view-id: '视图 ID'
+    view-name: '视图名称'
+    description: 描述
     tag: 标签
     status: 状态
     path: 路径
-    not-found: '没找到视图"%s".'
-    display-list: 显示列表
+    not-found: '视图 "%s" 没有找到。'
+    display-list: '显示列表'
     display-id: ID
-    display-name: 名字
-    display-description: 简介
+    display-name: 名称
+    display-description: 描述
     display-paths: 路径
 examples:
-    -
-        description: 'List of views on the site'
-        execution: "drupal debug:views\n"
+    - description: '网站上的视图列表'
+      execution: |
+        drupal debug:views

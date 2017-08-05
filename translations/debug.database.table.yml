@@ -1,19 +1,18 @@
-description: 显示数据库所有表
-help: '命令 <info>database:table:debug</info> 用于调试数据库表'
+description: "显示给定数据库中的所有表。"
+help: '<info>database:table:debug</info> 命令可帮助您调试数据库表。'
 arguments:
-    table: 调试的数据库表
-    database: 'settings.php 文件中 Database 的键'
+  table: '调试的表'
 options:
-    database: 'settings.php 文件中 Database 的键'
+  database: "来自 settings.php 的数据库键"
 messages:
-    table-show: '数据库 "%s" 中的表'
-    table: 表
-    column: 列
-    type: 类型
+  table-show: '显示数据库 "%s" 的表'
+  table: '表'
+  column: '列'
+  type: '类型'
 examples:
-    -
-        description: 'Show all tables on a database'
-        execution: 'drupal debug:database:table'
-    -
-        description: 'Show fields on the node table or another specified on the argument'
-        execution: "drupal debug:database:table node\n"
+    - description: '显示数据库上的所有表'
+      execution: |
+        drupal debug:database:table
+    - description: '显示节点表的字段或参数指定的其他字段'
+      execution: |
+        drupal debug:database:table node

@@ -1,9 +1,9 @@
-description: 为应用显示当前缓存上下文
+description: '显示应用程序的当前缓存上下文。'
 messages:
     code: '上下文 ID'
-    label: 标签
-    class: 类路径
+    label: '标签'
+    class: '类路径'
 examples:
-    -
-        description: 'Displays cache context'
-        execution: "drupal debug:cache:context\n"
+    - description: '显示缓存上下文'
+      execution: |
+        drupal debug:cache:context
