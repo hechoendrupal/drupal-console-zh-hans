@@ -1,15 +1,13 @@
-description: 显示当前配置
+description: '列出配置对象名称和单个配置对象。'
 arguments:
-    name: 配置名称
+    name: '配置对象名称，例如 "system.site"。'
 errors:
-    not-exists: '配置 "%s" 不存在'
+    not-exists: '配置 "%s" 不存在。'
+
 examples:
-    -
-        description: 'List all configuration object names.'
-        execution: 'drupal config:debug'
-    -
-        description: 'Display system site configurations values.'
-        execution: 'drupal config:debug system.site'
-    -
-        description: 'List all system configuration names.'
-        execution: 'drupal config:debug | grep system'
+    - description: '列出所有配置对象名称。'
+      execution: 'drupal config:debug'
+    - description: '显示系统的站点配置值。'
+      execution: 'drupal config:debug system.site'
+    - description: '列出所有系统配置名称。'
+      execution: 'drupal config:debug | grep system'
