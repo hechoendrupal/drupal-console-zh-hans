@@ -1,9 +1,12 @@
-description: 显示可用的断点
+description: '显示应用程序中可用的断点'
 options:
-    group-name: 输入断点组名称
+  group-name: '输入断点组名称'
 messages:
-    name: 包含断点的扩展
+  name: '具有断点的扩展'
 examples:
-    -
-        description: 'Provide a group name.'
-        execution: 'drupal breakpoints:debug bartik'
+    - description: '提供一个组名。'
+      execution: drupal breakpoints:debug bartik
+examples:
+    - description: '显示站点上可用的断点'
+      execution: |
+        drupal debug:breakpoints
