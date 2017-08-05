@@ -1,22 +1,22 @@
-description: 显示当前主题
+description: '显示应用程序的当前主题'
 arguments:
-    theme: 指定主题进行调试
+    theme: '调试指定主题'
 messages:
-    theme-id: '主题 Id'
-    theme-name: 主题名称
-    status: 状态
-    version: 版本
-    installed: 已安装
-    uninstalled: 已卸载
-    default-theme: 默认主题
-    properties: 属性
-    regions: 区域
-    invalid-theme: '主题 "%s" 无效'
-    theme-properties: 属性
+    theme-id: 'ID'
+    theme-name: '名称'
+    status: '状态'
+    version: '版本'
+    installed: '已安装'
+    uninstalled: '已卸载'
+    default-theme: '默认主題'
+    properties: '属性'
+    regions: '区域'
+    invalid-theme: '主题 "%s" 是无效的'
+    theme-properties: '属性'
 examples:
-    -
-        description: 'List of themes on the site'
-        execution: 'drupal debug:theme'
-    -
-        description: 'Bartik theme information'
-        execution: 'drupal debug:theme bartik'
+    - description: '网站上的主题列表'
+      execution: |
+        drupal debug:theme
+    - description: 'Bartik 主题信息'
+      execution: |
+        drupal debug:theme bartik
