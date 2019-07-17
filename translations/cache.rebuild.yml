@@ -1,15 +1,17 @@
-description: '重建和清除所有网站缓存。'
+description: 重建和清除所有网站缓存。
 options:
-    cache: '只清除特定缓存。'
+    cache: 只清除特定缓存。
 messages:
     welcome: '欢迎来到 cache:rebuild 命令'
-    rebuild: '正在重建缓存，请稍等片刻。'
-    completed: '缓存清除完毕。'
+    rebuild: 正在重建缓存，请稍等片刻。
+    completed: 缓存清除完毕。
     invalid-cache: '缓存 "%s" 是无效的'
 questions:
-    cache: '选择缓存'
+    cache: 选择缓存
 examples:
-    - description: 重建所有缓存
-      execution: 'drupal cr all'
-    - description: '重建 discovery 缓存'
-      execution: 'drupal cr discovery'
+    -
+        description: 重建所有缓存
+        execution: 'drupal cr all'
+    -
+        description: '重建 discovery 缓存'
+        execution: 'drupal cr discovery'

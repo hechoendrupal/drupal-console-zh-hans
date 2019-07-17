@@ -1,21 +1,18 @@
-description: '导入单个配置或一系列配置。'
+description: 导入单个配置或一系列配置。
 options:
-    file: '要导入的文件名或文件绝对路径'
-    directory: '导入文件的路径。'
+    file: 要导入的文件名或文件绝对路径
+    directory: 导入文件的路径。
 questions:
-    file: '输入要导入的文件名或文件绝对路径'
-    directory: '输入导入文件的路径。'
+    file: 输入要导入的文件名或文件绝对路径
+    directory: 输入导入文件的路径。
 messages:
-    missing-file: '文件选项丢失。'
-    empty-value: '值不能为空'
+    missing-file: 文件选项丢失。
+    empty-value: 值不能为空
     success: '配置 "%s"， 已成功导入'
 examples:
-    - description: '使用完整路径提供文件选项。'
-      execution: |
-        drupal config:import:single \
-          --file="/path/to/file/block.block.default_block.yml"
-    - description: '提供文件和目录选项'
-      execution: |
-        drupal config:import:single  \
-          --file="block.block.default_block.yml" \
-          --directory="/path/to/directory"
+    -
+        description: 使用完整路径提供文件选项。
+        execution: "drupal config:import:single \\\n  --file=\"/path/to/file/block.block.default_block.yml\"\n"
+    -
+        description: 提供文件和目录选项
+        execution: "drupal config:import:single  \\\n  --file=\"block.block.default_block.yml\" \\\n  --directory=\"/path/to/directory\"\n"

@@ -1,17 +1,17 @@
-description: '显示可用于应用程序的当前更新'
+description: 显示可用于应用程序的当前更新
 messages:
-    no-updates: '没有挂起的更新'
-    severity: '严重程度'
-    title: '标题'
-    value: '值'
-    description: '描述'
-    requirements-error: '以下要求未完成'
-    module-list: '包含挂起更新的模块'
-    module-list-post-update: '包含挂起的后更新的模块'
-    module: '模块'
+    no-updates: 没有挂起的更新
+    severity: 严重程度
+    title: 标题
+    value: 值
+    description: 描述
+    requirements-error: 以下要求未完成
+    module-list: 包含挂起更新的模块
+    module-list-post-update: 包含挂起的后更新的模块
+    module: 模块
     update-n: '更新 N'
-    post-update: '后更新函数'
+    post-update: 后更新函数
 examples:
-    - description: '挂起的更新列表'
-      execution: |
-        drupal debug:update
+    -
+        description: 挂起的更新列表
+        execution: "drupal debug:update\n"

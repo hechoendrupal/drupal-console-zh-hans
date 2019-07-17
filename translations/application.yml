@@ -1,47 +1,40 @@
 options:
-    env: '环境名称'
-    no-debug: '关闭调试模式'
-    learning: '生成一个详细的代码输出'
+    env: 环境名称
+    debug: 'Switches on debug mode'
+    learning: 生成一个详细的代码输出
     generate-chain: '将命令选项和参数显示为在 chain 命令中使用的 yaml 输出'
     generate-inline: '将显示命令选项和参数作为 inline 命令'
     generate-doc: '将命令选项和参数显示为 markdown'
     root: '定义要在命令执行中使用的 Drupal 根目录'
     uri: '要使用的 Drupal 站点的 URI（对于多站点环境或在备用端口上运行时）'
-    yes: '跳过确认并继续'
-    target: '您要与之交互的网站名称（适用于本地或远程站点）'
-    help: '显示此帮助消息'
-    quiet: '禁止命令中的所有输出'
-    verbose: '增加消息的冗长度：正常输出为1，更详细输出为2，调试为3'
-    version: '显示此应用程序版本'
+    'yes': 跳过确认并继续
+    target: 您要与之交互的网站名称（适用于本地或远程站点）
+    help: 显示此帮助消息
+    quiet: 禁止命令中的所有输出
+    verbose: 增加消息的冗长度：正常输出为1，更详细输出为2，调试为3
+    version: 显示此应用程序版本
     ansi: '强制 ANSI 输出'
     no-ansi: '禁用 ANSI 输出'
-    no-interaction: '不要问任何互动的问题'
-    check-fix: '尝试修复任何缺少的配置。'
+    no-interaction: 不要问任何互动的问题
+    check-fix: 尝试修复任何缺少的配置。
+    no-debug: 关闭调试模式
 arguments:
-    command: '待执行的命令'
+    command: 待执行的命令
 messages:
-    completed: '命令执行成功！'
+    completed: 命令执行成功！
     chain:
         generated: '此命令的 yaml 表示法，用法：拷贝进文件，比如 `~/.console/chain/sample.yml`，使用 `chain` 命令执行, 确保你的 yaml 文件的根键是以 `commands` 开始'
     inline:
-        generated: '此命令的内联表示法'
-    generated: '您现在可以开始使用生成的代码！'
+        generated: 此命令的内联表示法
+    generated: 您现在可以开始使用生成的代码！
     files:
-        generated: '生成或更新的文件'
-        copied: '已复制的文件'
+        generated: 生成或更新的文件
+        copied: 已复制的文件
+    lines-code: 'Generated lines: %s'
+    path: 'Generation path'
     learning:
         route: '为了创建页面，需要为它们定义路由。路由将 URL 路径映射到控制器。\n它定义访问 URL 时将调用什么函数或方法。如果用户访问\nhttp://drupal8.dev/{{ route.path }}，\n则路由系统将寻找具有该路径的路由。在这种情况下，它会找到一个匹配项，\n并执行 _controller 回调。在这种情况下，回调被定义为一个类名\n（\"\\Drupal\\{{ module }}\\Controller\\{{ class_name }}\"）\n和一个方法（\"{{ route.method }}\"）。'
-    autocomplete: |
-                Bash：Bash 支持取决于 http://bash-completion.alioth.debian.org/
-                项目可以随你的包管理器一起安装。然后添加
-                这行到你的 shell 配置文件。
-                <info>source "$HOME/.console/console.rc" 2>/dev/null</info>
-
-                Bash 或 Zsh：将此行添加到您的 shell 配置文件中：
-                <info>source "$HOME/.console/console.rc" 2>/dev/null</info>
-
-                Fish：创建一个符号链接
-                <info>ln -s ~/.console/drupal.fish ~/.config/fish/completions/drupal.fish</info>
+    autocomplete: "Bash：Bash 支持取决于 http://bash-completion.alioth.debian.org/\n项目可以随你的包管理器一起安装。然后添加\n这行到你的 shell 配置文件。\n<info>source \"$HOME/.console/console.rc\" 2>/dev/null</info>\n\nBash 或 Zsh：将此行添加到您的 shell 配置文件中：\n<info>source \"$HOME/.console/console.rc\" 2>/dev/null</info>\n\nFish：创建一个符号链接\n<info>ln -s ~/.console/drupal.fish ~/.config/fish/completions/drupal.fish</info>\n"
     version: '<info>"%s"</info> 版本 <comment>"%s"</comment>'
     disable:
         command:
@@ -50,41 +43,42 @@ messages:
 errors:
     invalid-command: '命令 "%s" 不是有效的命令名称。'
     renamed-command: '命令 "%s" 已改名, 使用 "%s" 替代。'
+    drush-command: 'Command "%s" is a Drush command (deprecated). Drupal Console equivalent "%s" was executed instead.'
+    statistics-failed: "The Drupal console failed to send statistics. After 10 attempts, this feature was disabled.\nIf you want to enable it again, use the following command:\n\n<info>drupal settings:set statistics.enabled true</info>\n"
+    statistics-url-failed: "The Drupal console failed to send statistics.\nYou must configure it in the global config.yml, use the following command and choose your preference:\n\n<info>drupal init</info>"
 site:
     messages:
-        path: '网站路径'
+        path: 网站路径
     errors:
         settings: '为了列出所有可用的命令，您首先应该安装 drupal。'
         directory: '为了列出所有可用的命令，您应该在 drupal 根目录运行此命令。'
         not-installed: 'Drupal Console 未安装在：%s'
         execute-composer: '您必须执行以下 composer 命令：'
-        missing-config-file: '缺少配置文件，可能的路径：'
+        missing-config-file: 缺少配置文件，可能的路径：
         missing-config-file-command: '执行 "drupal init" 命令生成一个'
 user:
     messages:
-        path: '用户主路径'
-
+        path: 用户主路径
 remote:
     errors:
-        passphrase-missing: '缺少密码文件'
-        passphrase-empty: '密码文件为空'
-        private-missing: '私有文件丢失'
-        private-empty: '私有文件为空'
-        private-invalid: '私有文件无效'
-        invalid-root: '根目录无效'
+        passphrase-missing: 缺少密码文件
+        passphrase-empty: 密码文件为空
+        private-missing: 私有文件丢失
+        private-empty: 私有文件为空
+        private-invalid: 私有文件无效
+        invalid-root: 根目录无效
         console-not-found: 'Drupal Console 在本网站上找不到'
-
 gitbook:
     messages:
         title: '可用的 Drupal Console 命令'
-        note: '备注'
+        note: 备注
         note-description: 'Drupal Console 命令*必须*从 Drupal 8 网站的根目录运行'
         command: 'Drupal Console 命令'
         command_description: '**"%s"** 命令 "%s"'
-        usage: '使用方法'
-        options: '可用选项'
-        option: '选项'
-        details: '详细信息'
-        arguments: '可用参数'
-        argument: '参数'
-        examples: '例子'
+        usage: 使用方法
+        options: 可用选项
+        option: 选项
+        details: 详细信息
+        arguments: 可用参数
+        argument: 参数
+        examples: 例子

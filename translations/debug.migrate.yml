@@ -1,12 +1,12 @@
-description: '显示可用于应用程序的当前迁移'
+description: 显示可用于应用程序的当前迁移
 arguments:
-    tag: '迁移标签'
+    tag: 迁移标签
 messages:
     id: '迁移 ID'
     description: 描述
-    no-migrations: "没有迁移可用尝试执行命令：migrate:setup:migrations"
+    no-migrations: '没有迁移可用尝试执行命令：migrate:setup:migrations'
     tags: 标签
 examples:
-    - description: '显示当前迁移'
-      execution: |
-        drupal debug:migrate
+    -
+        description: 显示当前迁移
+        execution: "drupal debug:migrate\n"

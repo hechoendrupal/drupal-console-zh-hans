@@ -1,21 +1,21 @@
-description: '显示应用程序的当前用户'
+description: 显示应用程序的当前用户
 help: '<info>user:debug</info>命令可帮助您获取当前用户。'
 welcome: '欢迎使用 Drupal 用户调试命令'
 options:
-    roles: '过滤出要调试的角色'
-    limit: '您希望在调试中列出多少用户'
+    roles: 过滤出要调试的角色
+    limit: 您希望在调试中列出多少用户
     uid: '用 uids 过滤结果列表 [放在引号里面以空格分隔]'
     username: '按用户名过滤结果列表 [放在引号里面以空格分隔]'
     mail: '根据用户的电子邮件过滤结果列表 [放在引号里面以空格分隔]'
 questions:
-    roles: '选择用于过滤用户调试列表的角色'
-    limit: '输入您希望显示的用户数量'
+    roles: 选择用于过滤用户调试列表的角色
+    limit: 输入您希望显示的用户数量
 messages:
     user-id: '用戶 ID'
-    username: '用户名'
-    roles: '角色'
-    status: '状态'
+    username: 用户名
+    roles: 角色
+    status: 状态
 examples:
-    - description: '网站用户列表'
-      execution: |
-        drupal debug:user
+    -
+        description: 网站用户列表
+        execution: "drupal debug:user\n"

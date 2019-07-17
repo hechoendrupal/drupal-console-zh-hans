@@ -1,36 +1,27 @@
-description: '显示所有插件类型。'
-help: |
-  显示所有插件类型，特定类型的插件实例或特定插件的定义。
-
-  列出所有插件类型：
-  <info>drupal plugin:debug</info>
-
-  列出图像效果插件类型的所有实例：
-  <info>drupal plugin:debug image.effect</info>
-
-  显示图片转换插件的定义：
-  <info>drupal plugin:debug image.effect image_convert</info>
-
-  <comment>注意：仅支持通过服务暴露的插件类型。</comment> 开发自定义插件类型时，可将名为“plugin.manager.PLUGIN_TYPE”的插件类型添加到文件  modulename.services.yml 中暴露出来。
+description: 显示所有插件类型。
+help: "显示所有插件类型，特定类型的插件实例或特定插件的定义。\n\n列出所有插件类型：\n<info>drupal plugin:debug</info>\n\n列出图像效果插件类型的所有实例：\n<info>drupal plugin:debug image.effect</info>\n\n显示图片转换插件的定义：\n<info>drupal plugin:debug image.effect image_convert</info>\n\n<comment>注意：仅支持通过服务暴露的插件类型。</comment> 开发自定义插件类型时，可将名为“plugin.manager.PLUGIN_TYPE”的插件类型添加到文件  modulename.services.yml 中暴露出来。\n"
 arguments:
-    type: '插件类型'
+    type: 插件类型
     id: '插件 ID'
 errors:
     plugin-type-not-found: '插件类型 "%s" 未找到。没有可用于该类型的服务。'
+messages:
+    plugin-info: 'Plugin additional information'
 table-headers:
-    plugin-type-name: '插件类型'
-    plugin-type-class: '插件管理器类'
+    plugin-type-name: 插件类型
+    plugin-type-class: 插件管理器类
     plugin-id: '插件 ID'
-    plugin-class: '插件类'
-    definition-key: '键'
-    definition-value: '值'
+    plugin-class: 插件类
+    definition-key: 键
+    definition-value: 值
+    setting: Setting
 examples:
-    - description: '显示当前站点上所有插件的列表'
-      execution: |
-        drupal debug:plugin
-    - description: '显示区块插件信息'
-      execution: |
-        drupal debug:plugin block
-    - description: '显示区块损坏信息'
-      execution: |
-        drupal debug:plugin block broken
+    -
+        description: 显示当前站点上所有插件的列表
+        execution: 'drupal debug:plugin'
+    -
+        description: 显示区块插件信息
+        execution: 'drupal debug:plugin block'
+    -
+        description: 显示区块损坏信息
+        execution: "drupal debug:plugin block broken\n"

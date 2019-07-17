@@ -1,8 +1,8 @@
-description: '在应用中安装依赖模块'
+description: 在应用中安装依赖模块
 arguments:
-    module: '多个模块名需要用空格分开'
+    module: 多个模块名需要用空格分开
 messages:
-    no-depencies: '没有依赖需要安装'
+    no-depencies: 没有依赖需要安装
     installing: '正在安装模块 "%s"'
     success: '以下模块已成功安装: "%s"'
 examples:

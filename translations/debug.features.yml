@@ -1,10 +1,10 @@
-description: '列出注册的功能。'
+description: 列出注册的功能。
 help: ''
 arguments:
-  bundle: 'Bundle 名称'
+    bundle: 'Bundle 名称'
 messages:
-  bundle: 'Bundle'
-  name: '名称'
-  machine-name: '机读名称'
-  status: '状态'
-  state: 'State'
+    bundle: Bundle
+    name: 名称
+    machine-name: 机读名称
+    status: 状态
+    state: State

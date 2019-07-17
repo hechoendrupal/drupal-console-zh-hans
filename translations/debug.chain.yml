@@ -1,4 +1,6 @@
-description: '列出可用的链命令文件。'
+description: 列出可用的链命令文件。
 messages:
-    directory: '目录'
-    file: '链命令文件名。'
+    directory: 目录
+    file: 链命令文件名。
+    command: 'Command name.'
+    no-files: 'No chain files found.'

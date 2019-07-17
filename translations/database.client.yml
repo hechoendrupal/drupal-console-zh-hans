@@ -1,9 +1,10 @@
-description: "启动数据库客户端（如果可用）"
+description: 启动数据库客户端（如果可用）
 arguments:
-    database: "来自 settings.php 的数据库键"
+    database: '来自 settings.php 的数据库键'
+    target: 'Database target from settings.php'
 messages:
     connection: '连接: "%s"'
 examples:
-    - description: '启动默认客户端，或在不考虑指定的参数情况下另外启动一个'
-      execution: |
-        drupal database:client <database>
+    -
+        description: 启动默认客户端，或在不考虑指定的参数情况下另外启动一个
+        execution: "drupal database:client <database>\n"

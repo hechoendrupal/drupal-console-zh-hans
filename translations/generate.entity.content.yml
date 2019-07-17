@@ -1,11 +1,14 @@
 description: 生成新内容实体
 help: ''
+welcome: 'Welcome to the Drupal Content Entity generator'
 options:
     module: common.options.module
     entity-class: 内容实体类名
     entity-name: 内容实体名称
     label: 标签
     has-bundles: '实体包含 Bundles'
+    has-forms: 'Entity has forms'
+    has-owner: 'Entity has owner'
     base-path: 内容实体路由的基本路径
     is-translatable: 内容实体可翻译
 questions:
@@ -14,6 +17,8 @@ questions:
     entity-name: 输入新内容实体的名称
     label: 输入新内容实体的标签
     has-bundles: '这个（内容）实体包含 Bundles 吗？'
+    has-forms: 'Do you want this (content) entity to have forms?'
+    has-owner: 'Do you want this (content) entity to have an owner?'
     base-path: 输入内容实体路由的基本路径
     is-translatable: 您的实体可翻译吗
     revisionable: 'Is your entity revisionable'

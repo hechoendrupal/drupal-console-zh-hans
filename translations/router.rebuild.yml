@@ -4,6 +4,7 @@ arguments:
 messages:
     rebuilding: 正在重建路由，请稍候
     completed: 路由重建完成
+    error-rebuild: 'Error to rebuild route(s).'
 examples:
     -
         description: 'Rebuild routes'

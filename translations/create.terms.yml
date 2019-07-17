@@ -2,25 +2,25 @@ description: '为您的 Drupal 8 应用程序创建术语。'
 help: '<info>create:terms</info> 命令可以帮助您创建术语。'
 welcome: '欢迎来到 Drupal 术语创建者'
 arguments:
-  vocabularies: '用于创建术语的词汇表'
+    vocabularies: 用于创建术语的词汇表
 options:
-    limit: '您要创建多少个术语？'
-    name-words: '术语名称中单词的最多数量'
+    limit: 您要创建多少个术语？
+    name-words: 术语名称中单词的最多数量
 questions:
-    vocabularies: '选择要用于创建术语的词汇表'
-    limit: '键入您要创建的术语数量？'
-    name-words: '键入术语名称中单词的最大数量'
+    vocabularies: 选择要用于创建术语的词汇表
+    limit: 键入您要创建的术语数量？
+    name-words: 键入术语名称中单词的最大数量
 messages:
     term-id: '术语 ID'
-    vocabulary: '词汇表'
-    name: '名称'
+    vocabulary: 词汇表
+    name: 名称
     invalid-vocabularies: '词汇表 "%s" 无效'
     created-terms: '术语 "%s" 创建成功'
+    error: 'Error creating terms: "%s"'
 examples:
-    - description: '提供词汇表术语名称。'
-      execution: drupal create:terms vocabulary
-    - description: '提供添加术语和标题用词的限制条件。'
-      execution: |
-        drupal create:terms tags \
-          --limit="10" \
-          --name-words="5"
+    -
+        description: 提供词汇表术语名称。
+        execution: 'drupal create:terms vocabulary'
+    -
+        description: 提供添加术语和标题用词的限制条件。
+        execution: "drupal create:terms tags \\\n  --limit=\"10\" \\\n  --name-words=\"5\"\n"

@@ -31,6 +31,8 @@ questions:
     field-type: '输入和字段格式化器插件和 Widget 插件一起使用的字段类型'
     default-widget: 输入字段类型插件的默认字段
     default-formatter: 输入字段类型插件的默认字段格式化器
+suggestions:
+    my-field-type: 'My Field Type'
 examples:
     -
         description: 'Generate field type, widget and formatter plugins specifying the module name, the type (class, label, plugin id and description), the formatter (class, label, plugin id) and the widget (class, label and plugin id)'

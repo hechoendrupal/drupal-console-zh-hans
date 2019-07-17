@@ -1,7 +1,18 @@
 description: '生成 hook_form_alter() 或 hook_form_FORM_ID_alter 实现'
 help: '命令 <info>"%s"</info> 用于生成一个新的 "%s"'
+welcome: 'Welcome to the Drupal Form Alter generator'
 options:
+    module: 'The Module name.'
     form-id: 要修改（Alter）的的表单(Form)ID
+    inputs: 'Create inputs in a form.'
+questions:
+    module: 'Enter the module name'
+    form-id: 'Enter the Form ID to alter'
+    type: 'Enter New field type'
+    label: 'Input label'
+    description: Description
+    default-value: 'Default value'
+    weight: 'Weight for input item'
 messages:
     inputs: '通过添加字段修改表单。 这是可选的，按下 <info>enter</info> 键 <info>继续</info>'
     loading-forms: '从 Webprofiler 模块中导入表单定义'

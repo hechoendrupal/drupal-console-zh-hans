@@ -1,2 +1,2 @@
 description: '打开一个提供交互式REPL(Read–Eval–Print-Loop) shell.'
-help: '此命令提供了一个psysh的封装。一个运行时开发者控制台，交互式调试器和PHP的REPL。'
+help: 此命令提供了一个psysh的封装。一个运行时开发者控制台，交互式调试器和PHP的REPL。

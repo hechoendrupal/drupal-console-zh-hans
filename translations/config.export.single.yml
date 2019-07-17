@@ -1,32 +1,27 @@
 description: '将单个配置或一系列配置导出为 yml 文件。'
-arguments:
-    name: '配置名称。'
 options:
-    include-dependencies: '导出配置的依赖关系。'
-    simple-configuration: '简单配置'
+    name: 'Configuration name.'
+    include-dependencies: 导出配置的依赖关系。
+    simple-configuration: 简单配置
     optional: '将配置导出为模块中的可选 YAML 配置'
     remove-uuid: '如果设置，配置导出时将没有 uuid 键。'
-    remove-config-hash: '如果设置，配置导出时将没有默认站点哈希键。'
+    remove-config-hash: 如果设置，配置导出时将没有默认站点哈希键。
 questions:
-    config-type: '配置类型'
-    name: '配置名称'
-    optional: '将模块中的配置导出为可选配置'
+    config-type: 配置类型
+    name: 配置名称
+    optional: 将模块中的配置导出为可选配置
     remove-uuid: '是否要从此导出中移除 uuid'
-    remove-config-hash: '要从此导出中移除默认站点哈希'
+    remove-config-hash: 要从此导出中移除默认站点哈希
 messages:
-    config-not-found: '未找到配置名称。'
+    config-not-found: 未找到配置名称。
     export: '配置已导出文件 "%s"'
-    invalid-config-type: '无效的配置类型，请从列表中选择一个'
-    invalid-config-name: '无效的配置名称，请从列表中选择一个'
-    config-exported: '配置已成功导出'
+    invalid-config-type: 无效的配置类型，请从列表中选择一个
+    invalid-config-name: 无效的配置名称，请从列表中选择一个
+    config-exported: 配置已成功导出
 examples:
-    - description: '提供要导出的配置设置名称'
-      execution: |
-        drupal config:export:single \
-          --name=config.settings.name
-    - description: 'uuid 和/或配置哈希将被删除。'
-      execution: |
-        drupal config:export:single \
-          --name=config.settings.name \
-          --remove-uuid \
-          --remove-config-hash
+    -
+        description: 提供要导出的配置设置名称
+        execution: "drupal config:export:single \\\n  --name=config.settings.name"
+    -
+        description: 'uuid 和/或配置哈希将被删除。'
+        execution: "drupal config:export:single \\\n  --name=config.settings.name \\\n  --remove-uuid \\\n  --remove-config-hash\n"

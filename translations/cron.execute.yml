@@ -1,14 +1,13 @@
-description: '执行模块实现的计划任务或执行所有计划任务'
+description: 执行模块实现的计划任务或执行所有计划任务
 messages:
     module-invalid: '模块 "%s" 没有实现计划任务'
     executing-cron: '执行模块 "%s" 的计划任务函数'
-    success: '请求的所有计划任务实现都被成功执行'
-    lock: '尝试在定时任务正在运行的时候重新运行'
+    success: 请求的所有计划任务实现都被成功执行
+    lock: 尝试在定时任务正在运行的时候重新运行
 examples:
-    - description: '全局执行定时任务'
-      execution: |
-        drupal cron:execute
-    - description: '执行指定模块的定时任务'
-      execution: |
-        drupal cron:execute \
-          <module>
+    -
+        description: 全局执行定时任务
+        execution: "drupal cron:execute\n"
+    -
+        description: 执行指定模块的定时任务
+        execution: "drupal cron:execute \\\n  <module>\n"

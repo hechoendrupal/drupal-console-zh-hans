@@ -1,14 +1,14 @@
-description: "删除给定数据库中的所有表。"
+description: 删除给定数据库中的所有表。
 help: '<info>database:drop</info> 命令可以帮助您删除数据库表。'
 arguments:
-  database: "来自 settings.php 的数据库键"
+    database: '来自 settings.php 的数据库键'
+    target: 'Database target from settings.php'
 question:
     drop-tables: '确认你真的想删除数据库 "%s" 中的所有表？'
 messages:
-    table: '表'
+    table: 表
     table-drop: '删除 "%s" 表成功'
 examples:
-    - description: '删除由参数指定的数据库中的表'
-      execution: |
-        drupal database:drop \
-          <database>
+    -
+        description: 删除由参数指定的数据库中的表
+        execution: "drupal database:drop \\\n  <database>\n"

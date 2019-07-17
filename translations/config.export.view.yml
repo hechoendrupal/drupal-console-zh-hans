@@ -1,22 +1,29 @@
 description: '在提供的模块中导出 YAML 格式的视图，以便在其他网站中重复使用。'
 messages:
-    view_exported: '视图成功导出'
+    view-exported: 'View exported sucessfully'
     depencies-included: '以下模块依赖关系被包括在 "%s"'
+    wrong-view: 'The view "%s" does not exist'
+    view_exported: 视图成功导出
 questions:
-    view: '要导出的视图'
-    optional-config: '将模块中的配置导出为可选配置'
+    view: 要导出的视图
+    optional-config: 将模块中的配置导出为可选配置
     include-module-dependencies: '在模块信息 YAML 文件中包含视图模块依赖关系'
+    remove-uuid: 'The view to be exported without uuid key.'
+    remove-config-hash: 'The view to be exported without the default site hash key.'
 arguments:
     view-id: '视图 ID'
 options:
     optional-config: '将配置导出为模块中的可选 YAML 配置'
     include-module-dependencies: '在模块信息 YAML 文件中包含视图模块依赖关系'
+    remove-uuid: 'If set, the configuration will be exported without uuid key.'
+    remove-config-hash: 'If set, the configuration will be exported without the default site hash key.'
 examples:
-    - description: '提供视图ID'
-      execution: drupal config:export:view viewid
-    - description: '您可以提供交互式值，如参数。'
-      execution: |
-        drupal config:export:view viewid \
-          --module="modulename" \
-          --optional-config \
-          --include-module-dependencies
+    -
+        description: 提供视图ID
+        execution: 'drupal config:export:view viewid'
+    -
+        description: 您可以提供交互式值，如参数。
+        execution: "drupal config:export:view viewid \\\n  --module=\"modulename\" \\\n  --optional-config \\\n  --include-module-dependencies\n"
+    -
+        description: 'Export as config for the provided module, updating the module''s info.yml with any module dependencies from the view.'
+        execution: "drupal config:export:view viewid \\\n  --module=\"modulename\" \\\n  --optional-config \\\n  --include-module-dependencies"

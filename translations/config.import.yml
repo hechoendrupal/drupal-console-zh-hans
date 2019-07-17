@@ -1,20 +1,21 @@
-description: '将配置导入当前应用程序。'
+description: 将配置导入当前应用程序。
 options:
-    file: '要导入的配置的归档文件的路径。'
-    directory: '要导入的配置目录的路径。'
-    remove-files: '同步后删除文件。'
+    file: 要导入的配置的归档文件的路径。
+    directory: 要导入的配置目录的路径。
+    remove-files: 同步后删除文件。
+    skip-uuid: 'Skip uuid from files'
+questions:
+    directory: 'Enter the directory name to import the configuration files.'
 messages:
-    config_files_imported: '配置文件列表。'
-    imported: '配置导入成功。'
-    importing: '正在导入配置。'
-    already-imported: '另一个请求可能已经在同步配置。'
-    nothing-to-do: '没有变化需要导入。'
+    config_files_imported: 配置文件列表。
+    imported: 配置导入成功。
+    importing: 正在导入配置。
+    already-imported: 另一个请求可能已经在同步配置。
+    nothing-to-do: 没有变化需要导入。
 examples:
-    - description: '提供一个配置文件'
-      execution: |
-        drupal config:import \
-          --file=/path/to/config/file
-    - description: '提供配置目录'
-      execution: |
-        drupal config:import  \
-          --directory=/path/to/config/dir
+    -
+        description: 提供一个配置文件
+        execution: "drupal config:import \\\n  --file=/path/to/config/file\n"
+    -
+        description: 提供配置目录
+        execution: "drupal config:import  \\\n  --directory=/path/to/config/dir\n"

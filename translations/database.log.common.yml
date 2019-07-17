@@ -1,6 +1,6 @@
 options:
-    type: '按特定类型过滤事件'
-    severity: '按特定级别的严重等级过滤事件'
+    type: 按特定类型过滤事件
+    severity: 按特定级别的严重等级过滤事件
     user-id: '按特定用户 ID 过滤事件'
 messages:
     event-id: '事件 ID'
@@ -9,4 +9,5 @@ messages:
     message: 消息
     user: 用户
     severity: 严重等级
-    invalid-severity: '严重等级类型无效，过滤器被忽略'
+    invalid-severity: 严重等级类型无效，过滤器被忽略
+    user-deleted: 'User has been deleted'

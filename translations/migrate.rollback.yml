@@ -1,6 +1,6 @@
-description: '回滚一个或多个迁移'
+description: 回滚一个或多个迁移
 arguments:
-    id: '迁移ID(s)'
+    id: 迁移ID(s)
 messages:
     not-available: '迁移ID "%s" 无效.已跳过'
     processing: '回滚 "%s" 完成'

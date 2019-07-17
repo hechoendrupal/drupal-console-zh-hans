@@ -28,6 +28,8 @@ questions:
     dependencies: 添加模块依赖
     test: 要生成一个单元测试类吗？
     twigtemplate: 'Do you want to generate a themeable template'
+suggestions:
+    my-awesome-module: 'My Awesome Module'
 warnings:
     module-unavailable: '警告：以下模块 "%s" 在你的本地环境中不可用'
 errors:

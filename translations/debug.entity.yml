@@ -1,12 +1,12 @@
-description: '调试系统中可用的实体'
+description: 调试系统中可用的实体
 help: '<info>entity:debug</info> 命令有助于获取实体列表。'
-arguments:
-questions:
-messages:
+arguments: null
+questions: null
+messages: null
 table-headers:
-  entity-name: '实体名称'
-  entity-type: '实体类型'
+    entity-name: 实体名称
+    entity-type: 实体类型
 examples:
-    - description: '显示可用实体'
-      execution: |
-        drupal debug:entity
+    -
+        description: 显示可用实体
+        execution: "drupal debug:entity\n"

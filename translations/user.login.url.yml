@@ -1,11 +1,17 @@
 description: 返回一次性登录链接.
 options:
+    user: 'User name/id.'
     user-id: 用户ID
 messages:
     url: '用户"%s"一次性登录连接: "%s"'
+questions:
+    user: 'Enter User name/id'
 errors:
     invalid-user: '没法载入用户实体(ID: "%s").'
 examples:
     -
         description: 'Get one time login url for user id 1'
         execution: "drupal user:login:url  1\n"
+    -
+        description: 'Get one time login url for username jmolivas'
+        execution: 'drupal user:login:url jmolivas'

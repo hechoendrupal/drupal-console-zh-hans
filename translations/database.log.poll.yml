@@ -1,14 +1,9 @@
 description: '轮询看门狗并每 x 秒打印一次新的日志条目'
 arguments:
-    duration: '在数据库读取之间休眠的持续时间（秒）'
+    duration: 在数据库读取之间休眠的持续时间（秒）
 messages:
-    warning: | 
-                不要在生产环境中使用
-                由于此脚本阻塞，因此出于性能原因，建议您使用多内核虚拟机进行运行
-                在清理/截断看门狗表之前停止此轮询机制！
-                用 ^ C 退出
+    warning: "不要在生产环境中使用\n由于此脚本阻塞，因此出于性能原因，建议您使用多内核虚拟机进行运行\n在清理/截断看门狗表之前停止此轮询机制！\n用 ^ C 退出\n"
 examples:
-    - description: '每隔 x 秒在屏幕上打印日志条目'
-      execution: |
-        drupal database:log:poll \
-          100
+    -
+        description: '每隔 x 秒在屏幕上打印日志条目'
+        execution: "drupal database:log:poll \\\n  100\n"

@@ -1,6 +1,19 @@
 description: 生成事件订阅者
+help: 'The <info>generate:event:subscriber</info> command helps you generate a new event subscriber.'
+welcome: 'Welcome to the Drupal Event Subscriber generator'
+options:
+    module: 'The Module name.'
+    name: 'Service name'
+    class: 'Class name'
+    services: 'Load services from the container.'
+    event-name: 'Enter event name'
+    callback-name: 'Callback function name to handle event'
 questions:
+    module: 'Enter the module name'
+    name: 'Enter the service name'
     class: 类名
+    services: 'Enter your service'
+    event-name: 'Enter event name'
     callback-name: 事件的回调函数名
     class-name: 类名
 examples:

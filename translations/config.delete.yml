@@ -1,19 +1,20 @@
-description: '删除配置'
+description: 删除配置
 arguments:
-    type: '配置类型。'
-    name: '配置名称。'
+    type: 配置类型。
+    name: 配置名称。
 messages:
-    all: '所有配置成功删除。'
+    all: 所有配置成功删除。
     deleted: '配置 "%s" 删除成功'
 errors:
-    config-storage: '配置类型将不会被加载。'
-    name: '配置名称必须包含一个值。'
-    type: '缺少配置类型。'
+    config-storage: 配置类型将不会被加载。
+    name: 配置名称必须包含一个值。
+    type: 缺少配置类型。
     not-exists: '配置 "%s" 不存在。'
 warnings:
-    undo: '此操作将永久删除所有配置。'
+    undo: 此操作将永久删除所有配置。
 questions:
-    sure: '确定删除所有配置'
+    sure: 确定删除所有配置
 examples:
-    - description: '提供配置类型和配置名称'
-      execution: 'drupal config:delete active all'
+    -
+        description: 提供配置类型和配置名称
+        execution: 'drupal config:delete active all'

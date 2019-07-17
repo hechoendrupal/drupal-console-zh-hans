@@ -1,13 +1,18 @@
-description: '显示应用程序中可用的库'
+description: 显示应用程序中可用的库
 options:
-    name: '输入库名称'
+    name: 输入库名称
 messages:
-    name: '使用库的扩展'
-    info: '库信息'
+    extension: Extension
+    library: Library
+    info: 库信息
+    name: 使用库的扩展
 examples:
-    - description: '列出所有可用的库'
-      execution: |
-        drupal debug:libraries
-    - description: '列出区块库信息'
-      execution: |
-        drupal debug:libraries block
+    -
+        description: 列出所有可用的库
+        execution: "drupal debug:libraries\n"
+    -
+        description: 列出区块库信息
+        execution: "drupal debug:libraries block\n"
+    -
+        description: 'List block/drupal.block library'
+        execution: "drupal debug:libraries block/drupal.block\n"
