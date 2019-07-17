@@ -1,12 +1,12 @@
-description: '显示应用程序的当前视图插件'
+description: 显示应用程序的当前视图插件
 arguments:
-    type: '按类型过滤视图插件'
+    type: 按类型过滤视图插件
 messages:
-    type: '类型'
-    name: '名称'
-    provider: '提供者'
-    views: '视图'
+    type: 类型
+    name: 名称
+    provider: 提供者
+    views: 视图
 examples:
-    - description: '视图插件列表'
-      execution: |
-        drupal debug:views:plugins
+    -
+        description: 视图插件列表
+        execution: "drupal debug:views:plugins\n"

@@ -6,7 +6,10 @@ options:
     service-name: 服务名
     class: 类名
     interface: 界面
+    interface-name: 'Interface name'
+    logger-channel: 'Logger channel'
     services: common.questions.services
+    path-service: Path
     path: 路径
 questions:
     module: common.questions.module
@@ -14,7 +17,9 @@ questions:
     class: 输入类名
     interface: 生成一个界面
     interface-name: 'Enter the interface name'
+    logger-channel: 'Create a logger channel'
     services: common.options.services
+    path-service: 'Enter the path for the services'
     path: 为服务(s)输入路径
 messages:
     service-already-taken: '服务名称已经在模块 "%s" 中被占用'

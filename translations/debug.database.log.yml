@@ -1,17 +1,17 @@
-description: '显示应用程序的当前日志事件'
+description: 显示应用程序的当前日志事件
 arguments:
-  event-id: 'DBLog 事件 ID'
+    event-id: 'DBLog 事件 ID'
 options:
-  asc: '按升序列出事件'
-  limit: '结果限制到特定数字'
-  offset: '限制的开始位置'
-  yml: '以 yml 格式打印'
+    asc: 按升序列出事件
+    limit: 结果限制到特定数字
+    offset: 限制的开始位置
+    yml: '以 yml 格式打印'
 messages:
-  not-found: 'DBLog 事件 "%s" 没有找到'
+    not-found: 'DBLog 事件 "%s" 没有找到'
 examples:
-  - description: '列出日志中的所有条目'
-    execution: |
-      drupal debug:database:log
-  - description: '按事件 ID 列出特定的日志条目'
-    execution: |
-      drupal debug:database:log 21228
+    -
+        description: 列出日志中的所有条目
+        execution: "drupal debug:database:log\n"
+    -
+        description: '按事件 ID 列出特定的日志条目'
+        execution: "drupal debug:database:log 21228\n"

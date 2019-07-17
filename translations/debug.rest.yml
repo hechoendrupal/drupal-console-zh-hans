@@ -12,10 +12,10 @@ messages:
     enabled: 启用
     disabled: 禁用
     rest-state: 'REST 状态'
-    supported-formats: '支持的格式'
-    supported-auth: '支持的认证提供商'
+    supported-formats: 支持的格式
+    supported-auth: 支持的认证提供商
     not-found: 'REST 资源 "%s" 未找到'
 examples:
-    - description: '显示 REST 钩子'
-      execution: |
-        drupal debug:rest
+    -
+        description: '显示 REST 钩子'
+        execution: "drupal debug:rest\n"

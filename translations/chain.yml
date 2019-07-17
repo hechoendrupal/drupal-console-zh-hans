@@ -1,21 +1,22 @@
-description: '链命令执行'
+description: 链命令执行
 options:
-    file: '用户定义的文件包含要执行的命令。'
+    file: 用户定义的文件包含要执行的命令。
 questions:
-    chain-file: '选择要执行的链文件'
+    chain-file: 选择要执行的链文件
 messages:
-    missing-file: '您必须提供有效的文件路径和名称。'
+    missing-file: 您必须提供有效的文件路径和名称。
     invalid-file: '文件 "%s" 不存在。'
     module-install: 'module:install 命令不能在链队列中运行，必须独立运行。'
     missing-environment-placeholders: '缺少环境占位符 "%s"'
-    set-environment-placeholders: '将环境占位符设置为：'
+    set-environment-placeholders: 将环境占位符设置为：
     missing-inline-placeholders: '缺少内联占位符 "%s"'
-    set-inline-placeholders: '将内联占位符作为：'
+    set-inline-placeholders: 将内联占位符作为：
     select-value-for-placeholder: '为占位符 %s 选择值'
     enter-value-for-placeholder: '为占位符 %s 输入值'
+    legacy-inline: 'Update inline legacy placeholders from %{{name}} to {{name}}.'
+    legacy-environment: 'Update environment legacy placeholders from ${{(NAME}} or %env(NAME)% to {{env("NAME")}}.'
+    metadata-registration: "You should register your chain file as command by providing metadata, more info at:\n   https://docs.drupalconsole.com/en/chains/registering.html"
 examples:
     -
-        description: '使用完整路径提供文件选项。'
-        execution: |
-          drupal chain \
-            --file="/path/to/file/chain-file.yml"
+        description: 使用完整路径提供文件选项。
+        execution: "drupal chain \\\n  --file=\"/path/to/file/chain-file.yml\""

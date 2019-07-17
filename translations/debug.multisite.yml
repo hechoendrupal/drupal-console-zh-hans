@@ -1,11 +1,11 @@
-description: "列出系统中可用的所有多站点"
+description: 列出系统中可用的所有多站点
 help: '<info>multisite:debug</info> 命令列出所有已知的多站点。'
 messages:
-    no-multisites: "没有配置多站点"
+    no-multisites: 没有配置多站点
     site: 站点
     directory: 目录
-    site-format: "网站使用书写格式：<port>.<domain>.<path>"
+    site-format: 网站使用书写格式：<port>.<domain>.<path>
 examples:
-    - description: '显示多站点信息'
-      execution: |
-        drupal debug:multisite
+    -
+        description: 显示多站点信息
+        execution: "drupal debug:multisite\n"

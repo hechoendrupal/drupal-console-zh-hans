@@ -1,4 +1,8 @@
 description: 添加一种语言
 messages:
     invalid-language: '语言 "%s" 不是一种有效语言'
+    invalid-languages: 'Languages "%s" are invalid'
     language-add-successfully: '语言 "%s" 添加成功'
+    languages-add-successfully: 'Languages "%s" were added successfully.'
+    language-installed: 'Language "%s" is already installed.'
+    languages-installed: 'Languages "%s" are already installed.'

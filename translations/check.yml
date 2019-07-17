@@ -1,9 +1,9 @@
-description: '系统需求检查器'
+description: 系统需求检查器
 messages:
-    file: '使用文件检查要求：'
+    file: 使用文件检查要求：
     php-invalid: '当前安装的版本 "%s" 无效，它需要 "%s" 或更高的版本。'
     configuration-missing: '配置文件 "%s" 未找到。'
     configuration-overwritten: 'PHP 配置文件 (php.ini) "%s" 未找到，将用 "%s" 代替。'
     extension-missing: '找不到扩展 "%s"。'
     extension-recommended: '建议安装扩展 "%s"。'
-    success: '检查通过。'
+    success: 检查通过。

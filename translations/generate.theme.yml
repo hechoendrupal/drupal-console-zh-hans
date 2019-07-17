@@ -10,7 +10,9 @@ options:
     package: 外观主题包
     composer: 加composer.json文件
     base-theme: '基础外观主题 (例如： classy, stable)'
+    base-theme-regions: 'Add the default regions of the chosen base theme'
     global-library: 全局格式库名
+    libraries: Libraries
     regions: 区域
     breakpoints: 断点
 questions:
@@ -37,6 +39,9 @@ questions:
     breakpoint-weight: 输入断点权重
     breakpoint-multipliers: 输入断点重复数
     breakpoint-add: 你要再加个断点吗？
+suggestions:
+    my-awesome-theme: 'My Awesome theme'
+    other: Other
 warnings:
     module-unavailable: '警告：在当前环境"%s"里下列模块没找到'
 errors:

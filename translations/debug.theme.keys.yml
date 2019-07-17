@@ -1,0 +1,15 @@
+description: 'Displays all theme keys provided by hook_theme functions'
+help: "Display all theme keys, or the definition for a specific theme key.\n\nList all theme keys:\n<info>drupal debug:theme:keys</info>\n\nShow the definition for the item_list theme key:\n<info>drupal debug:theme:keys item_list</info>\n"
+arguments:
+    key: Key
+table-headers:
+    key: Key
+    provider-type: 'Provider type'
+    provider: Provider
+    value: Value
+provider-types:
+    module: Module
+    base-theme-engine: 'Base theme engine'
+    base-theme: 'Base theme'
+    theme-engine: 'Theme engine'
+    theme: Theme

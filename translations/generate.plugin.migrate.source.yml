@@ -16,6 +16,8 @@ questions:
     table: 'Enter the table name'
     alias: 'Enter the alias for the table'
     group-by: 'Enter a field to group by if desired'
+    id: 'Enter the field id or press <info>enter</enter> if done'
+    description: 'Enter the field description'
     fields:
         id: 'Enter the field id or press <info>enter</enter> if done'
         description: 'Enter the field description'

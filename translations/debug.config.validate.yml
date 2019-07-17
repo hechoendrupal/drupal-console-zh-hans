@@ -1,14 +1,12 @@
 description: '在安装模块之前验证 schema 实现。'
 help: '在模块安装之前验证 schema 实现的帮助函数。将配置和 schema 文件路径指定为参数，并针对它们运行验证，使 schema 更容易调试，而无需耗费时间安装'
-options: {}
-arguments: {}
+options: {  }
+arguments: {  }
 messages:
-    noConfFile: '指定路径的配置文件不存在'
+    noConfFile: 指定路径的配置文件不存在
     noConfSchema: '指定路径的配置 schema 不存在'
     noSchemaName: '在模式文件中找不到 schema 定义。使用定义名称：'
 examples:
-    - description: '验证 schema'
-      execution: |
-        drupal debug:config:validate \
-          /path/to/file \
-          /path/to/schema-filepath
+    -
+        description: '验证 schema'
+        execution: "drupal debug:config:validate \\\n  /path/to/file \\\n  /path/to/schema-filepath\n"

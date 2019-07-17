@@ -1,8 +1,8 @@
-description: '显示可用的迁移'
+description: 显示可用的迁移
 arguments:
-    tag: '迁移标签'
+    tag: 迁移标签
 messages:
-    id: '迁移Id'
+    id: 迁移Id
     description: 描述
     no-migrations: '没有可用的迁移。请尝试执行命令: migrate:setup:migrations'
     tags: Tags

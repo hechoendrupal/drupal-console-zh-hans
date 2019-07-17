@@ -34,14 +34,5 @@
         "issues": "https://github.com/hechoendrupal/drupal-console-zh-hans/issues",
         "forum": "https://gitter.im/hechoendrupal/DrupalConsole",
         "docs": "https://hechoendrupal.gitbooks.io/drupal-console/"
-    },
-    "minimum-stability": "dev",
-    "extra": {
-        "branch-alias": {
-            "dev-master": "1.x-dev"
-        }
-    },
-    "require": {
-        "drupal/console-en": "^1.0"
     }
 }

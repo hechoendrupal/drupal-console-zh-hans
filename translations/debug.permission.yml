@@ -1,22 +1,14 @@
-description: '显示所有用户权限。'
-help: |
-  显示所有用户权限，并列出特定用户角色的所有用户权限。
-
-  列出所有用户权限：
-  <info>drupal permission:debug</info>
-
-  从用户角色列出所有用户权限
-  <info>drupal permission:debug authenticated</info>
-
+description: 显示所有用户权限。
+help: "显示所有用户权限，并列出特定用户角色的所有用户权限。\n\n列出所有用户权限：\n<info>drupal permission:debug</info>\n\n从用户角色列出所有用户权限\n<info>drupal permission:debug authenticated</info>\n"
 arguments:
-    role: '用户角色'
+    role: 用户角色
 messages:
     role-error: '角色 "%s" 不存在。请使用现有的用户角色。'
 table-headers:
-    permission-name: '权限名称'
-    permission-label: '权限标签'
-    permission-role: '角色'
+    permission-name: 权限名称
+    permission-label: 权限标签
+    permission-role: 角色
 examples:
-    - description: '显示站点上可用的所有权限'
-      execution: |
-        drupal debug:permission
+    -
+        description: 显示站点上可用的所有权限
+        execution: "drupal debug:permission\n"

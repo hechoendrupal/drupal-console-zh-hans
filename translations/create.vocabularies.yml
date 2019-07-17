@@ -2,19 +2,17 @@ description: '为您的 Drupal 8 应用程序创建词汇表。'
 help: '<info>create:vocabularies</info> 命令可以帮助您创建词汇表。'
 welcome: '欢迎来到 Drupal 词汇创建者'
 options:
-    limit: '你想创建多少个词汇表'
-    name-words: '词汇表名称中的最大单词数量'
+    limit: 你想创建多少个词汇表
+    name-words: 词汇表名称中的最大单词数量
 questions:
-    limit: '键入您要创建的词汇表数量'
-    name-words: '输入词汇表名称中的最大单词数量'
+    limit: 键入您要创建的词汇表数量
+    name-words: 输入词汇表名称中的最大单词数量
 messages:
     vocabulary-id: '词汇表 ID'
-    name: '名称'
+    name: 名称
     created-terms: '词汇表 "%s" 创建成功'
     error: '创建词汇表时出错： "%s"'
 examples:
-    - description: '提供创建词汇表的数量和词汇表名称中的最大单词数量'
-      execution: |
-        drupal create:vocabularies \
-          --limit="5" \
-          --name-words="5"
+    -
+        description: 提供创建词汇表的数量和词汇表名称中的最大单词数量
+        execution: "drupal create:vocabularies \\\n  --limit=\"5\" \\\n  --name-words=\"5\"\n"

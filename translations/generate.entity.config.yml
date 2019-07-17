@@ -1,5 +1,6 @@
 description: 生成新配置实体
 help: ''
+welcome: 'Welcome to the Drupal Config Entity generator'
 options:
     module: common.options.module
     entity-class: 配置实体类名

@@ -5,6 +5,7 @@ options:
     latest: 默认下载最新版本
     path: 贡献项目路径
     composer: '模块将被 Composer 下载,管理,安装的选项'
+    unstable: 'Module unstable'
     version: 模块版本，例如：1.x-dev
 questions:
     path: 输入贡献项目路径

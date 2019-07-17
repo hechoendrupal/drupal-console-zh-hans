@@ -1,5 +1,5 @@
-description: '显示可用于应用的当前模块'
-module: '模块名称'
+description: 显示可用于应用的当前模块
+module: 模块名称
 options:
     status: '模块状态 [启用|禁用]'
     type: '模块类型 [核心|非核心]'
@@ -13,12 +13,14 @@ messages:
     uninstalled: 已卸载
     version: 版本
     schema-version: 'Schema 版本'
-    total-downloads: '总安装量'
-    total-monthly: '月安装量'
-    total-daily: '日安装量'
+    total-downloads: 总安装量
+    total-monthly: 月安装量
+    total-daily: 日安装量
     no-results: '模块“%s“在 Repository 中没有找到'
 examples:
-    - description: '显示所有安装的模块'
-      execution: 'drupal mod --status=installed'
-    - description: '显示所有已安装的非核心模块'
-      execution: 'drupal mod --status=installed --type=no-core'
+    -
+        description: 显示所有安装的模块
+        execution: 'drupal mod --status=installed'
+    -
+        description: 显示所有已安装的非核心模块
+        execution: 'drupal mod --status=installed --type=no-core'

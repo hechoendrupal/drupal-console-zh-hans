@@ -1,14 +1,21 @@
 description: 生成一个定制的插件视窗域.
 help: '<info>generate:plugin:views:field</info>命令帮助生成一个新的定制的插件视窗域.'
+welcome: 'Welcome to the Drupal Plugin View Field generator'
 options:
+    module: 'The Module name.'
+    fields: 'Fields definition (class name, title and description).'
     class: 视窗插件域类名
     title: 视窗插件域标题
     description: 视窗插件域介绍
 questions:
+    module: 'Enter the module name'
     class: 视窗插件域类名
     title: 视窗插件域标题
     description: 视窗插件域介绍
     description_default: 我牛X的视窗插件域.
+    field-add: 'Do you want to add another field?'
+messages:
+    views-data-already-implemented: 'The hook views data was already implemented in module "%s". Please, merge the code manually'
 examples:
     -
         description: 'Generate a custom view field plugin specifying the module name, the class, a title and its description'

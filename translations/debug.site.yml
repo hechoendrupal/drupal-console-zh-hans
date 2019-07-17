@@ -1,17 +1,19 @@
-description: '列出所有已知的本地和远程站点。'
+description: 列出所有已知的本地和远程站点。
 help: '<info>site:debug</info> 列出所有已知的本地和远程站点。'
 messages:
-  site: '站点'
-  host: '主机'
-  root: '根目录'
-  not-sites: '没有定义网站'
-  invalid-site: '网站名称无效'
-  private-key: '私钥出错'
-  connect-error: '连接到远程机器时出错'
+    site: 站点
+    host: 主机
+    root: 根目录
+    invalid-sites: 'No sites defined.'
+    invalid-sites-using: "Using a site alias requires local configuration, more info at:\n   https://docs.drupalconsole.com/en/alias/using-site-alias.html\n"
+    invalid-site: 网站名称无效
+    private-key: 私钥出错
+    connect-error: 连接到远程机器时出错
+    not-sites: 没有定义网站
 options:
-  target: '目标'
-  property: Property
+    target: 目标
+    property: Property
 examples:
-    - description: ''
-      execution: |
-        drupal debug:site
+    -
+        description: ''
+        execution: "drupal debug:site\n"

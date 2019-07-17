@@ -1,25 +1,22 @@
 description: '添加数据库到 settings.php'
 options:
-  database: '数据库名称'
-  username: '数据库用户名'
-  password: '数据库密码'
-  prefix: '数据库前缀'
-  host: '数据库主机地址'
-  port: '数据库主机端口'
-  driver: '数据库驱动'
+    database: 数据库名称
+    username: 数据库用户名
+    password: 数据库密码
+    prefix: 数据库前缀
+    host: 数据库主机地址
+    port: 数据库主机端口
+    driver: 数据库驱动
 questions:
-  database: '键入数据库名称'
-  username: '键入用户名以访问数据库'
-  password: '键入数据库用户的密码'
-  prefix: '键入数据库前缀'
-  host: '键入数据库主机地址'
-  port: '键入数据库主机端口'
-  driver: '键入数据库驱动程序'
+    database: 键入数据库名称
+    username: 键入用户名以访问数据库
+    password: 键入数据库用户的密码
+    prefix: 键入数据库前缀
+    host: 键入数据库主机地址
+    port: 键入数据库主机端口
+    driver: 键入数据库驱动程序
 error: '无法写入站点设置文件。以 sudo 运行此命令或临时更改权限以允许对settings.php 进行写入访问。'
 examples:
-    - description: '添加数据库到 settings.php'
-      execution: |
-        drupal database:add \
-          --database=DATABASE \
-          --username=USERNAME \
-          --password=PASSWORD
+    -
+        description: '添加数据库到 settings.php'
+        execution: "drupal database:add \\\n  --database=DATABASE \\\n  --username=USERNAME \\\n  --password=PASSWORD\n"

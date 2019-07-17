@@ -1,8 +1,11 @@
 description: '生成一个 hook_post_update_NAME() 的实现'
 help: '命令 <info>"%s"</info> 帮助您生成一个 hook post update NAME "%s"'
+welcome: 'Welcome to the Drupal Post Updat generator'
 options:
+    module: 'The Module name.'
     post-update-name: 'Post Update 名称'
 questions:
+    module: 'Enter the module name'
     post-update-name: '请提供 Post Update 名称'
 messages:
     wrong-post-update-name: 'Post update 名称 "%s" 无效'

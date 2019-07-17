@@ -1,18 +1,23 @@
-description: '覆盖活动配置中的配置值。'
+description: 覆盖活动配置中的配置值。
 questions:
-    name: '输入配置名称'
-    key: '输入配置键'
-    value: '输入配置值'
+    name: 输入配置名称
+    key: 输入配置键
+    value: 输入配置值
 arguments:
-    name: '配置名称'
-    key: '键'
-    value: '值'
+    name: 配置名称
+    key: 键
+    value: 值
+options:
+    key: Key
+    value: Value
 messages:
-    configuration: '配置名称'
-    configuration-key: '配置键'
-    original: '原始值'
-    updated: '覆盖值'
+    configuration: 配置名称
+    configuration-key: 配置键
+    original: 原始值
+    updated: 覆盖值
     invalid-name: '配置对象 "%s" 不存在'
+    invalid-config-file: 'Config file does not exist.'
 examples:
-    - description: '将联系人模块的洪水限制设置为 10。'
-      execution: 'drupal config:override contact.settings flood.limit 10'
+    -
+        description: '将联系人模块的洪水限制设置为 10。'
+        execution: 'drupal config:override contact.settings flood.limit 10'

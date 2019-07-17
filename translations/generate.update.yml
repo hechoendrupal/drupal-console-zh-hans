@@ -1,8 +1,11 @@
 description: '生成一个 hook_update_N() 的实现'
 help: '命令 <info>"%s"</info> 帮助您生成一个 hook update N "%s"'
+welcome: 'Welcome to the Drupal Update generator'
 options:
+    module: 'The Module name.'
     update-n: 更新数字
 questions:
+    module: 'Enter the module name'
     update-n: '请提供 Update N 中的 N 这一数字'
 messages:
     wrong-update-n: '更新数字 "%s" 无效'

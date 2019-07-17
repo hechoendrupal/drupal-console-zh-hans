@@ -1,15 +1,15 @@
-description: '导入模块配置'
+description: 导入模块配置
 help: ''
 options:
     bundle: 'Bundle name'
 arguments:
-    packages: '包名'
+    packages: 包名
 questions:
-    packages: '输入要导入的包名'
+    packages: 输入要导入的包名
 messages:
-    no-packages: '没有可用的包.'
+    no-packages: 没有可用的包.
     not-available: '包 %s 不可用。'
     importing: '正在导入 %s.'
     uninstall: '包 %s 已安装.'
     reverting: '正在还原 %s.'
-    nothing: '没有要导入的.'
+    nothing: 没有要导入的.
